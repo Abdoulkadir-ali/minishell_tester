@@ -1,0 +1,2537 @@
+Categories,test.c,,A faire,A tester,Leaks ?,Fonctionne,Comportement attendu,Sortie d'exit (echo $?),Notes
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,\n (touche entrée),,,,,FALSE,$>,Exit de l'ancienne commande,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,[que des espaces],,,,,FALSE,$>,0,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,[que des tabulations],,,,,FALSE,$>,0,Crl + V + Tab
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,:,,,,,FALSE,$>,0,"Marche aussi pour ""#"""
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,!,,,,,FALSE,$>,1,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,>,,,,,FALSE,"bash: syntax error near
+unexpected token `newline'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,<,,,,,FALSE,"bash: syntax error near
+unexpected token `newline'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,>>,,,,,FALSE,"bash: syntax error near
+unexpected token `newline'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,<<,,,,,FALSE,"bash: syntax error near
+unexpected token `newline'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,<>,,,,,FALSE,"bash: syntax error near
+unexpected token `newline'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,>>>>>,,,,,FALSE,"bash: syntax error near
+unexpected token `>>'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,>>>>>>>>>>>>>>>,,,,,FALSE,"bash: syntax error near
+unexpected token `>>'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,<<<<<,,,,,FALSE,"bash: syntax error near
+unexpected token `<<'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,<<<<<<<<<<<<<<<<,,,,,FALSE,"bash: syntax error near
+unexpected token `<<'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,> > > >,,,,,FALSE,"bash: syntax error near
+unexpected token `>'
+$>",2,Marche aussi pour <
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,>> >> >> >>,,,,,FALSE,"bash: syntax error near
+unexpected token `>>'
+$>",2,Marche aussi pour <
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,>>>> >> >> >>,,,,,FALSE,"bash: syntax error near
+unexpected token `>>'
+$>",2,Marche aussi pour <
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,/,,,,,FALSE,"bash: /: Is a directory
+$>",126,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,//,,,,,FALSE,"bash: //: Is a directory
+$>",126,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,/.,,,,,FALSE,"bash: /.: Is a directory
+$>",126,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,/./../../../../..,,,,,FALSE,"bash: /./../../../../..: Is a directory
+$>",126,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,///////,,,,,FALSE,"bash: ///////: Is a directory
+$>",126,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,\\,NON GERE,,,,FALSE,bash: \: command not found,127,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,\\\\,NON GERE,,,,FALSE,bash: \\: command not found,127,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,\\\\\\\\,NON GERE,,,,FALSE,bash: \\\\: command not found,127,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,-,,,,,FALSE,"bash: -: command not found
+$>",127,"Marche aussi pour ""_@°]=+£$?"""
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,|,,,,,FALSE,"bash: syntax error near
+unexpected token `|'
+$>",2,"Marche aussi pour les metacharacters ""&();"""
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,| hola,,,,,FALSE,"bash: syntax error near
+unexpected token `|'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,| | |,,,,,FALSE,"bash: syntax error near
+unexpected token `|'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,||,,,,,FALSE,"bash: syntax error near
+unexpected token `||'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,|||||,,,,,FALSE,"bash: syntax error near
+unexpected token `||'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,|||||||||||||,,,,,FALSE,"bash: syntax error near
+unexpected token `||'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,>>|><,,,,,FALSE,"bash: syntax error near
+unexpected token `|'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,&&,,,,,FALSE,"bash: syntax error near
+unexpected token `&&'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,&&&&&,,,,,FALSE,"bash: syntax error near
+unexpected token `&&'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,&&&&&&&&&&&&&&,,,,,FALSE,"bash: syntax error near
+unexpected token `&&'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,;;,NON GERE,,,,FALSE,"bash: syntax error near
+unexpected token `;;'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,;;;;;,NON GERE,,,,FALSE,"bash: syntax error near
+unexpected token `;;'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,;;;;;;;;;;;;;;;,NON GERE,,,,FALSE,"bash: syntax error near
+unexpected token `;;'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,(),NON GERE,,,,FALSE,"bash: syntax error near
+unexpected token `)'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,( ( ) ),NON GERE,,,,FALSE,"bash: syntax error near
+unexpected token `)'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,( ( ( ( ) ) ) ),NON GERE,,,,FALSE,"bash: syntax error near
+unexpected token `)'
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,"""""",NON GERE,,,,FALSE,"bash: : command not found
+$>",127,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,"""hola""",,,,,FALSE,"bash: hola: command not found
+$>",127,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,'hola',,,,,FALSE,"bash: hola: command not found
+$>",127,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,'',NON GERE,,,,FALSE,"bash: : command not found
+$>",127,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,*,NON GERE,,,,FALSE,"bash: crashtest.c: command not found
+$>",127,[BONUS]
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,*/*,NON GERE,,,,FALSE,"bash: Docs/attest.cation: command not found
+$>",127,[BONUS]
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,*/*,NON GERE,,,,FALSE,bash: */*: No such file or directory,127,[BONUS] S'il n'y aucun dossier à l'intérieur
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,.,NON GERE,,,,FALSE,"bash: .: filename argument required
+$>",2,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,..,NON GERE,,,,FALSE,"bash: ..: command not found
+$>",127,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,~,NON GERE,,,,FALSE,"bash: /home/vietdu91: Is a directory
+$>",126,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,ABC=hola,NON GERE,,,,FALSE,$>,0,/!\ A gerer comme une erreur 
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,4ABC=hola,NON GERE,,,,FALSE,"bash: 4ABC=hola: command not found
+$>",127,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,hola,,,,,FALSE,"bash: hola: command not found
+$>",127,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,hola que tal,,,,,FALSE,"bash: hola: command not found
+$>",127,
+CARACTERES A LA VOLEE (SYNTAXE)  🌦,Makefile,,,,,FALSE,"bash: Makefile: command not found
+$>",127,
+ECHO   🎉,echo,,,,,FALSE,"
+$>",0,
+ECHO   🎉,echo -n,,,,,FALSE,$>,0,
+ECHO   🎉,echo Hola,,,,,FALSE,"Hola
+$>",0,
+ECHO   🎉,echoHola,,,,,FALSE,"bash: echoHola: command not found
+$>",127,
+ECHO   🎉,echo-nHola,,,,,FALSE,"bash: echo-nHola: command not found
+$>",127,
+ECHO   🎉,echo -n Hola,,,,,FALSE,Hola$>,0,
+ECHO   🎉,"echo ""-n"" Hola",,,,,FALSE,Hola$>,0,
+ECHO   🎉,echo -nHola,,,,,FALSE,"-nHola
+$>",0,
+ECHO   🎉,echo Hola -n,,,,,FALSE,"Hola -n
+$>",0,
+ECHO   🎉,echo Hola Que Tal,,,,,FALSE,"Hola Que Tal
+$>",0,
+ECHO   🎉,echo         Hola,,,,,FALSE,"Hola
+$>",0,
+ECHO   🎉,echo    Hola     Que    Tal,,,,,FALSE,"Hola Que Tal
+$>",0,
+ECHO   🎉,echo      \n hola,,,,,FALSE,"n hola
+$>",0,A gerer ?
+ECHO   🎉,"echo ""         "" | cat -e",,,,,FALSE,"         $
+$>",0,
+ECHO   🎉,echo           | cat -e,,,,,FALSE,"$
+$>",0,
+ECHO   🎉,"""""''echo hola""""'''' que""""'' tal""""''",,,,,FALSE,"hola que tal
+$>",0,
+ECHO   🎉,echo -n -n,,,,,FALSE,$>,0,
+ECHO   🎉,echo -n -n Hola Que,,,,,FALSE,Hola Que$>,0,
+ECHO   🎉,echo -p,,,,,FALSE,"-p
+$>",0,
+ECHO   🎉,echo -nnnnn,,,,,FALSE,$>,0,
+ECHO   🎉,echo -n -nnn -nnnn,,,,,FALSE,$>,0,
+ECHO   🎉,echo -n-nnn -nnnn,,,,,FALSE,"-n-nnn -nnnn
+$>",0,
+ECHO   🎉,echo -n -nnn hola -nnnn,,,,,FALSE,hola -nnnn$>,0,
+ECHO   🎉,echo -n -nnn-nnnn,,,,,FALSE,-nnn-nnnn$>,0,
+ECHO   🎉,echo --------n,,,,,FALSE,"--------n
+$>",0,
+ECHO   🎉,echo -nnn --------n,,,,,FALSE,--------n$>,0,
+ECHO   🎉,echo -nnn -----nn---nnnn,,,,,FALSE,-----nn---nnnn$>,0,
+ECHO   🎉,echo -nnn --------nnnn,,,,,FALSE,--------nnnn$>,0,
+ECHO   🎉,echo $,,,,,FALSE,"$
+$>",0,
+ECHO   🎉,echo $?,,,,,FALSE,"0
+$>",0,Renvoie le code de retour du dernier pipeline exécuté à l'avant-plan
+ECHO   🎉,echo $?$,,,,,FALSE,"0$
+$>",0,
+ECHO   🎉,echo $? | echo $? | echo $?,,,,,FALSE,"0
+$>",0,
+ECHO   🎉,echo $:$= | cat -e,,,,,FALSE,"$:$=$
+$>",0,
+ECHO   🎉,"echo "" $ "" | cat -e",,,,,FALSE," $ $
+$>",0,
+ECHO   🎉,echo ' $ ' | cat -e,,,,,FALSE," $ $
+$>",0,
+ECHO   🎉,echo $HOME,,,,,FALSE,"/home/vietdu91
+$>",0,
+ECHO   🎉,echo \$HOME,,,,,FALSE,"$HOME
+$>",0,
+ECHO   🎉,echo my shit terminal is [$TERM],,,,,FALSE,"my shit terminal is [xterm-256color]
+$>",0,
+ECHO   🎉,echo my shit terminal is [$TERM4,,,,,FALSE,"my shit terminal is [
+$>",0,
+ECHO   🎉,echo my shit terminal is [$TERM4],,,,,FALSE,"my shit terminal is []
+$>",0,
+ECHO   🎉,echo $UID,,,,,FALSE,"1000
+$>",0,
+ECHO   🎉,echo $HOME9,,,,,FALSE,"
+$>",0,Marche pour tous les caractères alphanumériques de l'ASCII
+ECHO   🎉,echo $9HOME,,,,,FALSE,"HOME
+$>",0,
+ECHO   🎉,echo $HOME%,,,,,FALSE,"/home/vietdu91%
+$>",0,"Marche pour les autres caractères (ponctuation, caractères non-ASCII, etc.)"
+ECHO   🎉,echo $UID$HOME,,,,,FALSE,"1000/home/vietdu91%
+$>",0,
+ECHO   🎉,echo Le path de mon HOME est $HOME,,,,,FALSE,"Le path de mon HOME est /home/vietdu91
+$>",0,
+ECHO   🎉,echo $USER$var\$USER$USER\$USERtest$USER,,,,,FALSE,"vietdu91$USERvietdu91$USERtestvietdu91
+$>",0,"A ne pas gerer si '\' non gere :
+Doit sortir : vietdu91vietdu91vietdu91vietdu91"
+ECHO   🎉,echo $hola*,,,,,FALSE,"
+$>",0,Cas d'un variable inexistant
+ECHO   🎉,echo -nnnn $hola,,,,,FALSE,$>,0,
+ECHO   🎉,echo > <,,,,,FALSE,"bash: syntax error near unexpected token `<'
+$>",2,
+ECHO   🎉,echo | |,,,,,FALSE,"bash: syntax error near unexpected token `|'
+$>",2,
+ECHO   🎉,EechoE,,,,,FALSE,"bash: EechoE: command not found
+$>",127,
+ECHO   🎉,.echo.,,,,,FALSE,"bash: .echo.: command not found
+$>",127,
+ECHO   🎉,>echo>,,,,,FALSE,"bash: syntax error near unexpected token `newline'
+$>",2,
+ECHO   🎉,<echo<,,,,,FALSE,"bash: syntax error near unexpected token `newline'
+$>",2,
+ECHO   🎉,>>echo>>,,,,,FALSE,"bash: syntax error near unexpected token `newline'
+$>",2,
+ECHO   🎉,|echo|,,,,,FALSE,"bash: syntax error near unexpected token `|'
+$>",2,
+ECHO   🎉,|echo -n hola,,,,,FALSE,"bash: syntax error near unexpected token `|'
+$>",2,
+ECHO   🎉,echo *,NON GERE,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+$>",0,[BONUS]
+ECHO   🎉,echo '*',NON GERE,,,,FALSE,"*
+$>",0,Marche aussi pour les double quotes
+ECHO   🎉,echo D*,NON GERE,,,,FALSE,"Docs Dockers Drawings
+$>",0,[BONUS]
+ECHO   🎉,echo *Z,NON GERE,,,,FALSE,"*Z
+$>",0,[BONUS]
+ECHO   🎉,echo *t hola,NON GERE,,,,FALSE,"crashtest.c test.c hola
+$>",0,[BONUS]
+ECHO   🎉,echo *t,NON GERE,,,,FALSE,"crashtest.c test.c
+$>",0,[BONUS]
+ECHO   🎉,echo $*,NON GERE,,,,FALSE,"
+$>",0,[BONUS]
+ECHO   🎉,echo hola*hola *,NON GERE,,,,FALSE,"hola*hola crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+$>",0,[BONUS]
+ECHO   🎉,echo $hola*,NON GERE,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+$>",0,[BONUS]
+ECHO   🎉,echo $HOME*,NON GERE,,,,FALSE,"/home/vietdu91
+$>",0,[BONUS]
+ECHO   🎉,"echo $""""",,,,,FALSE,"
+$>",0,
+ECHO   🎉,"echo ""$""""""",,,,,FALSE,"$
+$>",0,
+ECHO   🎉,echo '$''',,,,,FALSE,"$
+$>",0,
+ECHO   🎉,"echo $""HOME""",,,,,FALSE,"HOME
+$>",0,
+ECHO   🎉,echo $''HOME,,,,,FALSE,"HOME
+$>",0,
+ECHO   🎉,"echo $""""HOME",,,,,FALSE,"HOME
+$>",0,
+ECHO   🎉,"echo ""$HO""ME",,,,,FALSE,"ME
+$>",0,
+ECHO   🎉,echo '$HO'ME,,,,,FALSE,"$HOME
+$>",0,
+ECHO   🎉,"echo ""$HO""""ME""",,,,,FALSE,"ME
+$>",0,
+ECHO   🎉,echo '$HO''ME',,,,,FALSE,"$HOME
+$>",0,
+ECHO   🎉,"echo ""'$HO''ME'""",,,,,FALSE,"''ME'
+$>",0,⚠️ Il y a bien 3 singles quotes avant le ME. Je ne sais pas pourquoi Excel tronque à l'affichage le 3e quote
+ECHO   🎉,"echo """"$HOME",,,,,FALSE,"/home/vietdu91
+$>",0,
+ECHO   🎉,"echo """" $HOME",,,,,FALSE," /home/vietdu91
+$>",,
+ECHO   🎉,echo ''$HOME,,,,,FALSE,"/home/vietdu91
+$>",0,
+ECHO   🎉,echo '' $HOME,,,,,FALSE," /home/vietdu91
+$>",,
+ECHO   🎉,"echo $""HO""""ME""",,,,,FALSE,"HOME
+$>",0,
+ECHO   🎉,echo $'HO''ME',,,,,FALSE,"HOME
+$>",0,
+ECHO   🎉,echo $'HOME',,,,,FALSE,"HOME
+$>",0,
+ECHO   🎉,"echo ""$""HOME",,,,,FALSE,"$HOME
+$>",0,
+ECHO   🎉,echo $=HOME,,,,,FALSE,"$=HOME
+$>",0,
+ECHO   🎉,"echo $""HOLA""",,,,,FALSE,"HOLA
+$>",0,
+ECHO   🎉,echo $'HOLA',,,,,FALSE,"HOLA
+$>",0,
+ECHO   🎉,echo $DONTEXIST Hola,,,,,FALSE,"Hola
+$>",0,Le cas ou la variable n'existe pas et n'est pas importee
+ECHO   🎉,"echo ""hola""",,,,,FALSE,"hola
+$>",0,
+ECHO   🎉,echo 'hola',,,,,FALSE,"hola
+$>",0,
+ECHO   🎉,echo ''hola'',,,,,FALSE,"hola
+$>",0,
+ECHO   🎉,echo ''h'o'la'',,,,,FALSE,"hola
+$>",0,
+ECHO   🎉,"echo ""''h'o'la''""",,,,,FALSE,"'h'o'la''
+$>",0,
+ECHO   🎉,"echo ""'""h'o'la""'""",,,,,FALSE,"hola'
+$>",0,
+ECHO   🎉,"echo""'hola'""",,,,,FALSE,"bash: echo'hola': command not found
+$>",0,
+ECHO   🎉,"echo ""'hola'""",,,,,FALSE,"'hola'
+$>",0,
+ECHO   🎉,"echo '""hola""'",,,,,FALSE,"""hola""
+$>",0,
+ECHO   🎉,"echo '''ho""''''l""a'''",,,,,FALSE,"ho""l""a
+$>",0,
+ECHO   🎉,"echo hola""""""""""""""""""""""""",,,,,FALSE,"hola
+$>",0,
+ECHO   🎉,"echo hola""''''''''''""",,,,,FALSE,"hola''''''''''
+$>",0,
+ECHO   🎉,echo hola'''''''''''',,,,,FALSE,"hola
+$>",0,
+ECHO   🎉,"echo hola'""""""""""""""""""""'",,,,,FALSE,"hola""""""""""""""""""""
+$>",0,
+ECHO   🎉,"e""cho hola""",,,,,FALSE,"bash: echo hola: command not found
+$>",127,
+ECHO   🎉,e'cho hola',,,,,FALSE,"bash: echo hola: command not found
+$>",127,
+ECHO   🎉,"echo ""hola     "" | cat -e",,,,,FALSE,"hola     $
+$>",0,
+ECHO   🎉,"echo """"hola",,,,,FALSE,"hola
+$>",0,
+ECHO   🎉,"echo """" hola",,,,,FALSE," hola
+$>",0,
+ECHO   🎉,"echo """"             hola",,,,,FALSE," hola
+$>",0,
+ECHO   🎉,"echo """"hola",,,,,FALSE,"hola
+$>",0,
+ECHO   🎉,"echo """" hola",,,,,FALSE," hola
+$>",0,
+ECHO   🎉,"echo hola""""bonjour",,,,,FALSE,"holabonjour
+$>",0,
+ECHO   🎉,"""e""'c'ho 'b'""o""nj""o""'u'r",,,,,FALSE,"bonjour
+$>",0,
+ECHO   🎉,"""""e""'c'ho 'b'""o""nj""o""'u'r""",,,,,FALSE,"bash: e'c'ho 'b'onjo'u'r: command not found
+$>",127,
+ECHO   🎉,"echo ""$DONTEXIST""Makefile",,,,,FALSE,"Makefile
+$>",0,
+ECHO   🎉,"echo ""$DONTEXIST""""Makefile""",,,,,FALSE,"Makefile
+$>",0,
+ECHO   🎉,"echo ""$DONTEXIST"" ""Makefile""",,,,,FALSE," Makefile
+$>",0,Attention a l'espace avant
+💰,$?,,,,,FALSE,"bash: 0: command not found
+$>",127,Renvoie le code de retour du dernier pipeline exécuté à l'avant-plan
+💰,$?$?,,,,,FALSE,"bash: 00: command not found
+$>",127,
+💰,?$HOME,,,,,FALSE,"bash: ?/home/vietdu91: command not found
+$>",127,
+💰,$,,,,,FALSE,"bash: $: command not found
+$>",127,
+💰,$HOME,,,,,FALSE,"bash: /home/vietdu91: Is a directory
+$>",126,
+💰,$HOMEdskjhfkdshfsd,,,,,FALSE,$>,0,
+💰,"""$HOMEdskjhfkdshfsd""",,,,,FALSE,"bash: : command not found
+$>",127,
+💰,'$HOMEdskjhfkdshfsd',,,,,FALSE,"bash: $HOMEsddfddfssfdfs: command not found
+$>",127,
+💰,$DONTEXIST,,,,,FALSE,$>,0,Cas d'un variable inexistant
+💰,$LESS$VAR,,,,,FALSE,"bash: -R: command not found
+$>",127,
+SIGNAUX 🛰,Ctlr-C,,,,,FALSE,"$> ^C
+$>",130,
+SIGNAUX 🛰,holaCtlr-C,,,,,FALSE,"$> hola^C
+$>",130,
+SIGNAUX 🛰,cat (faire Ctlr-C apres avoir fait plusieurs fois [ENTREE]),,,,,FALSE,"
+
+
+^C
+$>",130,
+SIGNAUX 🛰,cat | rev(faire Ctlr-C apres avoir fait plusieurs fois [ENTREE]),,,,,FALSE,"
+
+
+^C
+$>",0,
+SIGNAUX 🛰,Ctlr-D,,,,,FALSE,"$> exit
+~/minishell $>",0,Sort du programme
+SIGNAUX 🛰,hola Ctlr-D,,,,,FALSE,$> hola,/,Ne fait rien
+SIGNAUX 🛰,Ctlr-\,,,,,FALSE,$>,/,Ne fait rien
+SIGNAUX 🛰,hola Ctlr-\,,,,,FALSE,$> hola,/,
+SIGNAUX 🛰,cat (faire Ctlr-\ apres avoir fait plusieurs fois [ENTREE]),,,,,FALSE,"
+
+
+^\Quit (core dumped)
+$>",131,
+SIGNAUX 🛰,Ctlr-Z,,,,,FALSE,$>,/,Ne fait rien
+SIGNAUX 🛰,sleep 3 | sleep 3 | sleep 3 (faire Ctlr-C une seconde apres),,,,,FALSE,"^C
+$>",130,
+SIGNAUX 🛰,sleep 3 | sleep 3 | sleep 3 (faire Ctlr-D une seconde apres),,,,,FALSE,$>,0,Ne fait rien
+SIGNAUX 🛰,sleep 3 | sleep 3 | sleep 3 (faire Ctlr-\ une seconde apres),,,,,FALSE,"^\Quit (core dumped)
+$>",131,
+🛫 ENV & EXPORT & UNSET 🛬,env,,,,,FALSE,"...
+PATH=...
+$>",0,
+🛫 ENV & EXPORT & UNSET 🛬,env hola,NON GERE,,,,FALSE,"env: ʻhola’: No such file or directory
+$>",127,
+🛫 ENV & EXPORT & UNSET 🛬,env hola que tal,NON GERE,,,,FALSE,"env: ʻhola’: No such file or directory
+$>",127,
+🛫 ENV & EXPORT & UNSET 🛬,env env,NON GERE,,,,FALSE,"...
+PATH=...
+$>",0,Affiche une seule fois env
+🛫 ENV & EXPORT & UNSET 🛬,env env env env env,NON GERE,,,,FALSE,"...
+PATH=...
+$>",0,Affiche une seule fois env
+🛫 ENV & EXPORT & UNSET 🛬,env ls,NON GERE,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+$>",0,
+🛫 ENV & EXPORT & UNSET 🛬,env ./Makefile,NON GERE,,,,FALSE,"env: ‘./Makefile’: Permission denied
+$>",126,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=bonjour
+env",,,,,FALSE,"...
+HOLA=bonjour
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export       HOLA=bonjour
+env",,,,,FALSE,"...
+HOLA=bonjour
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,export,,,,,FALSE,"...
+export PATH=""...""
+$>",0,"Les variables sont triees par ordre alphabetique
+On n'oublie pas les doubles quotes qui designent les strings attribues a chaque variable"
+🛫 ENV & EXPORT & UNSET 🛬,"export Hola
+export",,,,,FALSE,"...
+export HOME=""/home/vietdu91""
+export Hola
+export PATH=""...""
+$>","0
+0",Hola n'existe pas dans env mais il existe dans export
+🛫 ENV & EXPORT & UNSET 🛬,"export Hola9hey
+export",,,,,FALSE,"...
+export HOME=""/home/vietdu91""
+export Hola9hey
+export PATH=""...""
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,export $DONTEXIST,,,,,FALSE,"...
+export HOME=""/home/vietdu91""
+export PATH=""...""
+$>",0,Le cas ou la variable n'existe pas et n'est pas importee
+🛫 ENV & EXPORT & UNSET 🛬,"export | grep ""HOME""",,,,,FALSE,"export HOME=""/home/vietdu91""
+$>",0,
+🛫 ENV & EXPORT & UNSET 🛬,"export """"",,,,,FALSE,"bash: export: `': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,export =,,,,,FALSE,"bash: export: ʻ=': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,export %,,,,,FALSE,"bash: export: ʻ%': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,export $?,,,,,FALSE,"bash: export: `0': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,export ?=2,,,,,FALSE,"bash: export: ʻ?=2': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,export 9HOLA=,,,,,FALSE,"bash: export: ʻ9HOLA=': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA9=bonjour
+env",,,,,FALSE,"...
+HOLA9=bonjour
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export _HOLA=bonjour
+env",,,,,FALSE,"...
+_HOLA=bonjour
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export ___HOLA=bonjour
+env",,,,,FALSE,"...
+___HOLA=bonjour
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export _HO_LA_=bonjour
+env",,,,,FALSE,"...
+_HO_LA_=bonjour
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,export HOL@=bonjour,,,,,FALSE,"bash: export: ʻHOL@=bonjour’: not a valid identifier
+$>",1,"Cas où le nom de variable ne contient pas de lettres, ni de chiffres, ni d'underscores"
+🛫 ENV & EXPORT & UNSET 🛬,export HOL\~A=bonjour,NON GERE,,,,FALSE,"bash: export: `HOL~A=bonjour': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,export -HOLA=bonjour,,,,,FALSE,bash: export: -H: invalid option,2,
+🛫 ENV & EXPORT & UNSET 🛬,export --HOLA=bonjour,,,,,FALSE,bash: export: --: invalid option,2,
+🛫 ENV & EXPORT & UNSET 🛬,export HOLA-=bonjour,,,,,FALSE,"bash: export: `HOLA-=bonjour': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,export HO-LA=bonjour,,,,,FALSE,"bash: export: `HO-LA=bonjour': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,export HOL.A=bonjour,,,,,FALSE,"bash: export: `HOL.A=bonjour': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,export HOL\\\$A=bonjour,NON GERE,,,,FALSE,"bash: export: `HOL\$A=bonjour': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,export HO\\\\LA=bonjour,NON GERE,,,,FALSE,"bash: export: `HO\\LA=bonjour': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,export HOL}A=bonjour,,,,,FALSE,"bash: export: `HOL}A=bonjour': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,export HOL{A=bonjour,,,,,FALSE,"bash: export: `HOL{A=bonjour': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,export HO*LA=bonjour,,,,,FALSE,"bash: export: `HO*LA=bonjour': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,export HO#LA=bonjour,,,,,FALSE,"bash: export: `HO#LA=bonjour': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,export HO@LA=bonjour,,,,,FALSE,"bash: export: `HO@LA=bonjour': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,export HO!LA=bonjour,,,,,FALSE,bash: !LA=bonjour: event not found,0,
+🛫 ENV & EXPORT & UNSET 🛬,"export HO$?LA=bonjour
+env",,,,,FALSE,"...
+HO0LA=bonjour
+$>",0,
+🛫 ENV & EXPORT & UNSET 🛬,export +HOLA=bonjour,,,,,FALSE,"bash: export: `+HOLA=bonjour': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,export HOL+A=bonjour,,,,,FALSE,"bash: export: `HOL+A=bonjour': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA+=bonjour
+env",NON GERE,,,,FALSE,"...
+HOLA=bonjour
+$>",0,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=bonjour
+export HOLA+=bonjour
+env",NON GERE,,,,FALSE,"...
+HOLA=bonjourbonjour
+$>",0,"""+="" s'ajoute au contenu de la variable"
+🛫 ENV & EXPORT & UNSET 🛬,"exportHOLA=bonjour
+env",NON GERE,,,,FALSE,"...
+PATH=...
+$>",0,
+🛫 ENV & EXPORT & UNSET 🛬,export HOLA =bonjour,,,,,FALSE,"bash: export: ʻ=bonjour’: not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,export HOLA = bonjour,,,,,FALSE,"bash: export: ʻ=': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=bon jour
+env",,,,,FALSE,"...
+HOLA=bon
+$>",0,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA= bonjour
+env",,,,,FALSE,"...
+HOLA=
+$>",0,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=bonsoir
+export HOLA=bonretour
+export HOLA=bonjour
+env",,,,,FALSE,"...
+HOLA=bonjour
+$>","0
+0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=$HOME
+env",,,,,FALSE,"...
+HOLA=/home/vietdu91
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=bonjour$HOME
+env",,,,,FALSE,"...
+HOLA=bonjour/home/vietdu91
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=$HOMEbonjour
+env",,,,,FALSE,"...
+HOLA=
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=bon$jour
+env",,,,,FALSE,"...
+HOLA=bon
+$>","0
+0","Le cas où la variable ""$jour"" n'existe pas"
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=bon\jour
+env",NON GERE,,,,FALSE,"...
+HOLA=bonjour
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=bon\\jour
+env",NON GERE,,,,FALSE,"...
+HOLA=bon\jour
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,export HOLA=bon(jour,NON GERE,,,,FALSE,"bash: syntax error near
+unexpected token `('
+$>",2,Marche pour les caractères : ()
+🛫 ENV & EXPORT & UNSET 🛬,export HOLA=bon()jour,NON GERE,,,,FALSE,"bash: syntax error near
+unexpected token `('
+$>",2,
+🛫 ENV & EXPORT & UNSET 🛬,export HOLA=bon&jour,NON GERE,,,,FALSE,"bash: jour: command not found
+$>",127,Marche pour les caractères : &|
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=bon@jour
+env",,,,,FALSE,"$> env
+...
+HOLA=bon@jour
+$>",0,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=bon;jour
+env",,,,,FALSE,"bash: jour: command not found
+$> env
+...
+HOLA=bon
+$>","127
+0",
+🛫 ENV & EXPORT & UNSET 🛬,export HOLA=bon!jour,,,,,FALSE,"bash: !jour: event not found
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=bon""jour""
+env",,,,,FALSE,"...
+HOLA=bonjour
+PATH=...
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA$USER=bonjour
+env",,,,,FALSE,"...
+HOLAvietdu91=bonjour
+PATH=...
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=bonjour=casse-toi
+echo $HOLA",,,,,FALSE,"HOLA=bonjour=casse-toi
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export ""HOLA=bonjour""=casse-toi
+echo $HOLA",,,,,FALSE,"HOLA=bonjour=casse-toi
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=bonjour
+export BYE=casse-toi
+echo $HOLA et $BYE",,,,,FALSE,"bonjour et casse-toi
+$>","0
+0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=bonjour BYE=casse-toi
+echo $HOLA et $BYE",,,,,FALSE,"bonjour et casse-toi
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export $HOLA=bonjour
+env",,,,,FALSE,"...
+bonjour=bonjour
+PATH=...
+$>",0,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=""bonjour      ""  
+echo $HOLA | cat -e",,,,,FALSE,"bonjour$
+$>",0,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=""   -n bonjour   ""  
+echo $HOLA",,,,,FALSE,bonjour$>,0,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=""bonjour   ""/
+echo $HOLA",,,,,FALSE,"bonjour /
+$>",0,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA='""'
+echo "" $HOLA "" | cat -e",,,,,FALSE," "" $
+$>",0,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=at
+c$HOLA Makefile",,,,,FALSE,"[cela affiche le Makefile]
+$>",0,
+🛫 ENV & EXPORT & UNSET 🛬,"export """" HOLA=bonjour
+env",,,,,FALSE,"bash: export: `"": not a valid identifier
+$> env
+...
+HOLA=bonjour
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=""cat Makefile | grep NAME""  
+echo $HOLA",,,,,FALSE,"cat Makefile | grep NAME
+$>",0,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=hey 
+echo $HOLA$HOLA$HOLA=hey$HOLA",,,,,FALSE,"heyheyhey=heyhey
+$>",0,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=""  bonjour  hey  ""  
+echo $HOLA | cat -e",,,,,FALSE,"bonjour hey$
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=""  bonjour  hey  ""  
+echo """"""$HOLA"""""" | cat -e",,,,,FALSE,"   bonjour    hey    $
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=""  bonjour  hey  ""  
+echo wesh""$HOLA"" | cat -e",,,,,FALSE,"wesh   bonjour    hey    $
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=""  bonjour  hey  ""  
+echo wesh""""$HOLA.",,,,,FALSE,"wesh bonjour hey .
+$>","0
+0",/!\ Bien supprimer les espaces en trop au debut et a la fin du string d'export
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=""  bonjour  hey  ""  
+echo wesh$""""HOLA.",,,,,FALSE,"weshHOLA.
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=""  bonjour  hey  ""  
+echo wesh$""HOLA HOLA"".",,,,,FALSE,"weshHOLA HOLA.
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=bonjour
+export HOLA="" hola et $HOLA""
+echo $HOLA",,,,,FALSE,"hola et bonjour
+$>","0
+0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=bonjour
+export HOLA=' hola et $HOLA'
+echo $HOLA",,,,,FALSE,"hola et $HOLA
+$>","0
+0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=bonjour
+export HOLA="" hola et $HOLA""$HOLA
+echo $HOLA",,,,,FALSE,"hola et bonjourbonjour
+$>","0
+0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=""ls        -l    - a""
+echo $HOLA",,,,,FALSE,"ls -l - a
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=""s -la"" 
+l$HOLA",,,,,FALSE,"total 16
+drwx------  2 vietdu91 [...] .
+drwxrwxewt 51 root     [...] ..
+-rwxr-xr-x  8 vietdu91 [...] crashtest.c
+[...]
+$> ","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=""s -la"" 
+l""$HOLA""",,,,,FALSE,"bash: ls -la: command not found
+$>",127,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=""s -la"" 
+l'$HOLA'",,,,,FALSE,"bash: l$HOLA: command not found
+$>",127,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=""l"" 
+$HOLAs",,,,,FALSE,$>,0,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=""l"" 
+""$HOLA""s",,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+$>",0,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOL=A=bonjour
+env",,,,,FALSE,"...
+HOL=A=bonjour
+$>",0,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=""l"" 
+'$HOLA's",,,,,FALSE,"bash: $HOLAs: command not found
+$>",127,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOL=A=""""
+env",,,,,FALSE,"...
+HOL=A=
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export TE+S=T
+env",,,,,FALSE,"bash: export: `TE+S=T': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,"export """"=""""",,,,,FALSE,"bash: export: `=': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,export ''='',,,,,FALSE,"bash: export: `=': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,"export ""=""=""=""",,,,,FALSE,"bash: export: `===': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,export '='='=',,,,,FALSE,"bash: export: `===': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=p
+export BYE=w
+$HOLA""BYE""d",,,,,FALSE,"bash: pBYEd: command not found
+$>",127,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=p
+export BYE=w
+""$HOLA""'$BYE'd",,,,,FALSE,"bash: p$BYEd: command not found
+$>",127,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=p
+export BYE=w
+""$HOLA""""$BYE""d",,,,,FALSE,/home/vietdu91/42_works/minishell,0,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=p
+export BYE=w
+$""HOLA""$""BYE""d",,,,,FALSE,"bash: HOLABYEd: command not found
+$>",127,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=p
+export BYE=w
+$'HOLA'$'BYE'd",,,,,FALSE,"bash: HOLABYEd: command not found
+$>",127,
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=-n
+""echo $HOLA"" hey",,,,,FALSE,"bash: echo -n: command not found
+$>",127,
+🛫 ENV & EXPORT & UNSET 🛬,"export A=1 B=2 C=3 D=4 E=5 F=6 G=7 H=8
+echo ""$A'$B""'$C""$D'$E'""$F'""'$G'$H""",,,,,FALSE,"1'2$C""$D5""$F'7'8
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=bonjour
+env
+unset HOLA
+env",,,,,FALSE,"...
+PATH=...
+$>","0
+0
+0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"export HOLA=bonjour
+env
+unset HOLA
+unset HOLA
+env",,,,,FALSE,"...
+PATH=...
+$>","0
+0
+0
+0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"unset PATH
+echo $PATH",,,,,FALSE,"
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"unset PATH
+ls",,,,,FALSE,bash: ls: No such file or directory,127,
+🛫 ENV & EXPORT & UNSET 🛬,"unset """"",,,,,FALSE,"bash: unset: `': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,unset INEXISTANT,,,,,FALSE,$>,0,Cas où la variable n'existe pas
+🛫 ENV & EXPORT & UNSET 🛬,"unset PWD
+env | grep PWD
+pwd",,,,,FALSE,"$>
+$>
+/home/vietdu91/42_works/minishell
+$>","0
+0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"pwd
+unset PWD
+env | grep PWD
+cd $PWD
+pwd",,,,,FALSE,"/home/vietdu91/42_works/minishell
+$>
+$>
+$>
+/home/vietdu91","0
+0
+0
+0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"unset OLDPWD
+env | grep OLDPWD",,,,,FALSE,"$>
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,unset 9HOLA,,,,,FALSE,"bash: unset: `9HOLA': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,unset HOLA9,,,,,FALSE,$>,0,
+🛫 ENV & EXPORT & UNSET 🛬,unset HOL?A,,,,,FALSE,"bash: unset: `HOL?A': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,unset HOLA HOL?A,,,,,FALSE,"bash: unset: `HOL?A': not a valid identifier
+$>",1,Il unset bien HOLA
+🛫 ENV & EXPORT & UNSET 🛬,unset HOL?A HOLA,,,,,FALSE,"bash: unset: `HOL?A': not a valid identifier
+$>",1,Il unset bien HOLA
+🛫 ENV & EXPORT & UNSET 🛬,unset HOL?A HOL.A,,,,,FALSE,"bash: unset: `HOL?A': not a valid identifier
+bash: unset: `HOL.A': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,unset HOLA=,,,,,FALSE,"bash: unset: `HOLA=': not a valid identifier
+$>",1,
+🛫 ENV & EXPORT & UNSET 🛬,unset HOL\\\\A,NON GERE,,,,FALSE,bash: unset: `HOL\\A': not a valid identifier,1,
+🛫 ENV & EXPORT & UNSET 🛬,unset HOL;A,NON GERE,,,,FALSE,bash: A: command not found,127,
+🛫 ENV & EXPORT & UNSET 🛬,unset HOL.A,,,,,FALSE,bash: unset: `HOL.A': not a valid identifier,1,
+🛫 ENV & EXPORT & UNSET 🛬,unset HOL+A,,,,,FALSE,bash: unset: `HOL+A': not a valid identifier,1,
+🛫 ENV & EXPORT & UNSET 🛬,unset HOL=A,,,,,FALSE,bash: unset: `HOL=A': not a valid identifier,1,
+🛫 ENV & EXPORT & UNSET 🛬,unset HOL{A,,,,,FALSE,bash: unset: `HOL{A': not a valid identifier,1,
+🛫 ENV & EXPORT & UNSET 🛬,unset HOL}A,,,,,FALSE,bash: unset: `HOL}A': not a valid identifier,1,
+🛫 ENV & EXPORT & UNSET 🛬,unset HOL-A,,,,,FALSE,bash: unset: `HOL-A': not a valid identifier,1,
+🛫 ENV & EXPORT & UNSET 🛬,unset -HOLA,,,,,FALSE,bash: unset: -H: invalid option,2,
+🛫 ENV & EXPORT & UNSET 🛬,unset _HOLA,,,,,FALSE,$>,0,
+🛫 ENV & EXPORT & UNSET 🛬,unset HOL_A,,,,,FALSE,$>,0,
+🛫 ENV & EXPORT & UNSET 🛬,unset HOLA_,,,,,FALSE,$>,0,
+🛫 ENV & EXPORT & UNSET 🛬,unset HOL*A,,,,,FALSE,bash: unset: `HOL*A': not a valid identifier,1,
+🛫 ENV & EXPORT & UNSET 🛬,unset HOL#A,,,,,FALSE,bash: unset: `HOL#A': not a valid identifier,1,
+🛫 ENV & EXPORT & UNSET 🛬,unset $HOLA,,,,,FALSE,$>,0,"Il va unset le contenu de $HOLA, c'est-a-dire la variable bonjour"
+🛫 ENV & EXPORT & UNSET 🛬,unset $PWD,,,,,FALSE,bash: unset: `/home/vietdu91/42_works/minishell': not a valid identifier,1,
+🛫 ENV & EXPORT & UNSET 🛬,unset HOL@,,,,,FALSE,bash: unset: `HOL@': not a valid identifier,1,
+🛫 ENV & EXPORT & UNSET 🛬,unset HOL!A,,,,,FALSE,bash: !A: event not found,1,
+🛫 ENV & EXPORT & UNSET 🛬,unset HOL^A,,,,,FALSE,bash: unset: `HOL^A': not a valid identifier,1,
+🛫 ENV & EXPORT & UNSET 🛬,unset HOL$?A,,,,,FALSE,$>,0,"Unset prend en compte le contenu de $?, c'est-a-dire qu'il lit HOL0A ou HOL127A"
+🛫 ENV & EXPORT & UNSET 🛬,unset HOL\~A,,,,,FALSE,bash: unset: `HOL~': not a valid identifier,1,
+🛫 ENV & EXPORT & UNSET 🛬,"unset """" HOLA
+env | grep HOLA",,,,,FALSE,"bash: unset: `': not a valid identifier
+$>
+$>","1
+0",HOLA sera quand meme unset !!
+🛫 ENV & EXPORT & UNSET 🛬,"unset PATH
+echo $PATH",,,,,FALSE,"
+$>","0
+0",
+🛫 ENV & EXPORT & UNSET 🛬,"unset PATH
+cat Makefile",,,,,FALSE,"bash: cat: No such file or directory
+$>","0
+1",
+🛫 ENV & EXPORT & UNSET 🛬,unset =,,,,,FALSE,bash: unset: `=': not a valid identifier,0,
+🛫 ENV & EXPORT & UNSET 🛬,unset ======,,,,,FALSE,bash: unset: `======': not a valid identifier,0,
+🛫 ENV & EXPORT & UNSET 🛬,unset ++++++,,,,,FALSE,bash: unset: `++++++': not a valid identifier,0,
+🛫 ENV & EXPORT & UNSET 🛬,unset _______,,,,,FALSE,$>,0,
+🛫 ENV & EXPORT & UNSET 🛬,unset export,,,,,FALSE,$>,0,
+🛫 ENV & EXPORT & UNSET 🛬,unset echo,,,,,FALSE,$>,0,
+🛫 ENV & EXPORT & UNSET 🛬,unset pwd,,,,,FALSE,$>,0,
+🛫 ENV & EXPORT & UNSET 🛬,unset cd,,,,,FALSE,$>,0,
+🛫 ENV & EXPORT & UNSET 🛬,unset unset,,,,,FALSE,$>,0,
+🛫 ENV & EXPORT & UNSET 🛬,unset sudo,,,,,FALSE,$>,0,
+🛫 ENV & EXPORT & UNSET 🛬,export hola | unset hola | echo $?,,,,,FALSE,"0
+$>",0,
+FICHIERS BINAIRES 0️⃣ 1️⃣,/bin/echo,,,,,FALSE,"
+$>",0,
+FICHIERS BINAIRES 0️⃣ 1️⃣,/bin/echo Hola Que Tal,,,,,FALSE,"Hola Que Tal
+$>",0,
+FICHIERS BINAIRES 0️⃣ 1️⃣,/bin/env,,,,,FALSE,"...
+PATH=...
+$>",0,
+FICHIERS BINAIRES 0️⃣ 1️⃣,/bin/cd Desktop,,,,,FALSE,bash: /bin/cd: No such file or directory,127,
+HISTORIQUE 🏦,history,NON GERE,,,,FALSE,"...
+  558 echo $?
+  559 clear
+  560 history
+$>",0,Affiche les 500 dernières commandes
+HISTORIQUE 🏦,[touche du haut],,,,,FALSE,$> clear,/,Defile l'historique
+CD 💿 PWD,pwd,,,,,FALSE,"/home/vietdu91/42_works/minishell
+$>",0,Retourne $PWD
+CD 💿 PWD,pwd hola,,,,,FALSE,"/home/vietdu91/42_works/minishell
+$>",0,
+CD 💿 PWD,pwd ./hola,,,,,FALSE,"/home/vietdu91/42_works/minishell
+$>",0,
+CD 💿 PWD,pwd hola que tal,,,,,FALSE,"/home/vietdu91/42_works/minishell
+$>",0,
+CD 💿 PWD,pwd -p,,,,,FALSE,"bash: pwd: -p: invalid option
+$>",2,
+CD 💿 PWD,pwd --p,,,,,FALSE,"bash: pwd: --: invalid option
+$>",2,
+CD 💿 PWD,pwd ---p,,,,,FALSE,"bash: pwd: --: invalid option
+$>",2,
+CD 💿 PWD,pwd -- p,NON GERE,,,,FALSE,"/home/vietdu91/42_works/minishell
+$>",0,
+CD 💿 PWD,pwd pwd pwd,,,,,FALSE,"/home/vietdu91/42_works/minishell
+$>",0,N'affiche qu'une fois
+CD 💿 PWD,pwd ls,,,,,FALSE,"/home/vietdu91/42_works/minishell
+$>",0,
+CD 💿 PWD,pwd ls env,,,,,FALSE,"/home/vietdu91/42_works/minishell
+$>",0,
+CD 💿 PWD,cd,,,,,FALSE,$>,0,"On doit se retrouver dans le dossier défini par $HOME
+/home/vietdu91"
+CD 💿 PWD,cd .,,,,,FALSE,$>,0,"L'user reste dans le même dossier
+/home/vietdu91/42_works/minishell"
+CD 💿 PWD,cd ./,,,,,FALSE,$>,0,/home/vietdu91/42_works/minishell
+CD 💿 PWD,cd ./././.,,,,,FALSE,$>,0,/home/vietdu91/42_works/minishell
+CD 💿 PWD,cd ././././,,,,,FALSE,$>,0,/home/vietdu91/42_works/minishell
+CD 💿 PWD,cd ..,,,,,FALSE,$>,0,"On se retrouve au dossier précédent
+/home/vietdu91/42_works"
+CD 💿 PWD,cd ../,,,,,FALSE,$>,0,/home/vietdu91/42_works
+CD 💿 PWD,cd ../..,,,,,FALSE,$>,0,/home/vietdu91
+CD 💿 PWD,cd ../.,,,,,FALSE,$>,0,/home/vietdu91/42_works
+CD 💿 PWD,cd .././././.,,,,,FALSE,$>,0,/home/vietdu91/42_works
+CD 💿 PWD,cd srcs,,,,,FALSE,$>,0,/home/vietdu91/42_works/minishell/srcs
+CD 💿 PWD,cd srcs objs,,,,,FALSE,"bash: cd: too many arguments
+$>",1,/home/vietdu91/42_works/minishell
+CD 💿 PWD,cd 'srcs',,,,,FALSE,$>,0,/home/vietdu91/42_works/minishell/srcs
+CD 💿 PWD,"cd ""srcs""",,,,,FALSE,$>,0,/home/vietdu91/42_works/minishell/srcs
+CD 💿 PWD,cd '/etc',,,,,FALSE,$>,0,"Marche aussi avec les double quotes
+/"
+CD 💿 PWD,cd /e'tc',,,,,FALSE,$>,0,/etc
+CD 💿 PWD,"cd /e""tc""",,,,,FALSE,$>,0,/etc
+CD 💿 PWD,cd sr,,,,,FALSE,"bash: cd: sr: No such file or directory
+$>",1,
+CD 💿 PWD,cd Makefile,,,,,FALSE,"bash: cd: Makefile: Not a directory
+$>",1,
+CD 💿 PWD,cd ../minishell,,,,,FALSE,$>,0,/home/vietdu91/42_works/minishell
+CD 💿 PWD,cd ../../../../../../..,,,,,FALSE,$>,0,/
+CD 💿 PWD,cd .././../.././../bin/ls,,,,,FALSE,"bash: cd: .././../.././../bin/ls: No such file or directory
+$>",1,/home/vietdu91/42_works/minishell
+CD 💿 PWD,cd /,,,,,FALSE,$>,0,/
+CD 💿 PWD,cd '/',,,,,FALSE,$>,0,"Marche aussi avec les double quotes
+/"
+CD 💿 PWD,"cd //
+pwd",NON GERE,,,,FALSE,"//
+$>",0,/
+CD 💿 PWD,"cd '//'
+pwd",NON GERE,,,,FALSE,"//
+$>",0,"Marche aussi avec les double quotes
+/"
+CD 💿 PWD,"cd ///
+pwd",,,,,FALSE,"/
+$>",0,/
+CD 💿 PWD,"cd ////////
+pwd",,,,,FALSE,"/
+$>",0,/
+CD 💿 PWD,"cd '////////'
+pwd",,,,,FALSE,"/
+$>",0,"Marche aussi avec les double quotes
+/"
+CD 💿 PWD,cd /minishell,,,,,FALSE,"bash: cd: /minishell: No such file or directory
+$>",1,
+CD 💿 PWD,"cd /
+cd ..",,,,,FALSE,$>,0,/
+CD 💿 PWD,cd _,,,,,FALSE,"bash: cd: _: No such file or directory
+$>",1,
+CD 💿 PWD,cd -,,,,,FALSE,"/home/vietdu91/42_works/minishell
+$>",0,"Retourne à $OLD_PWD
+$OLD_PWD et $PWD sont inversés
+/home/vietdu91/42_works/minishell"
+CD 💿 PWD,cd --,NON GERE,,,,FALSE,$>,0,"Retourne à $HOME
+$OLD_PWD et $PWD sont inversés
+/home/vietdu91"
+CD 💿 PWD,cd ---,,,,,FALSE,"bash: cd: --: invalid option
+$>",2,
+CD 💿 PWD,cd $HOME,,,,,FALSE,$>,0,/home/vietdu91
+CD 💿 PWD,cd $HOME $HOME,,,,,FALSE,"bash: cd: too many arguments
+$>",1,
+CD 💿 PWD,cd $HOME/42_works,,,,,FALSE,$>,0,/home/vietdu91/42_works
+CD 💿 PWD,"cd ""$PWD/srcs""",,,,,FALSE,$>,0,/home/vietdu91/42_works/minishell/srcs
+CD 💿 PWD,cd '$PWD/srcs',,,,,FALSE,"bash: cd: $PWD/srcs: No such file or directory
+$>",1,
+CD 💿 PWD,"unset HOME
+cd $HOME",,,,,FALSE,"bash: cd: HOME not set
+$>",1,
+CD 💿 PWD,"unset HOME
+export HOME=
+cd",,,,,FALSE,$>,0,/home/vietdu91/42_works/minishell
+CD 💿 PWD,"unset HOME
+export HOME
+cd",,,,,FALSE,"bash: cd: HOME not set
+$>",1,
+CD 💿 PWD,cd minishell Docs crashtest.c,,,,,FALSE,"bash: cd: too many arguments
+$>",1,
+CD 💿 PWD,"   cd / | echo $?
+pwd",,,,,FALSE,"0
+$>","0
+0",/home/vietdu91/42_works/minishell
+CD 💿 PWD,cd ~,,,,,FALSE,$>,0,/home/vietdu91
+CD 💿 PWD,cd ~/,NON GERE,,,,FALSE,$>,0,/home/vietdu91
+CD 💿 PWD,"cd ~/ | echo $?
+pwd",NON GERE,,,,FALSE,"0
+$>",0,/home/vietdu91/42_works/minishell
+CD 💿 PWD,cd *,NON GERE,,,,FALSE,$>,0,[BONUS] S'il n'y a qu'un seul dossier et rien d'autre
+CD 💿 PWD,cd *,NON GERE,,,,FALSE,"bash: cd: minishell: No such file or directory
+$>",1,[BONUS] S'il n'y a qu'un seul fichier et rien d'autre
+CD 💿 PWD,cd *,NON GERE,,,,FALSE,"bash: cd: too many arguments
+$>",1,[BONUS] S'il y au moins deux éléments
+CD 💿 PWD,"mkdir a
+mkdir a/b
+cd a/b
+rm -r ../../a
+cd ..",,,,,FALSE,"chdir: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+$>",1,
+CD 💿 PWD,"mkdir a
+mkdir a/b
+cd a/b
+rm -r ../../a
+pwd",,,,,FALSE,"pwd: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+$>",1,
+CD 💿 PWD,"mkdir a
+mkdir a/b
+cd a/b
+rm -r ../../a
+echo $PWD
+echo $OLDPWD",,,,,FALSE,"/home/vietdu91/42_works/minishell/a/b
+$>
+/home/vietdu91/42_works/minishell
+$>","0
+0",
+CD 💿 PWD,"mkdir a
+mkdir a/b
+cd a/b
+rm -r ../../a
+cd
+echo $PWD
+echo $OLDPWD",,,,,FALSE,"/home
+$>
+/home/vietdu91/42_works/minishell/a/b
+$>","0
+0",
+CD 💿 PWD,"mkdir a
+cd a
+rm -r ../a
+echo $PWD
+echo $OLDPWD",,,,,FALSE,"../../../home/vietdu91/42_works/minishell/a
+$>
+../../../home/vietdu91/42_works/minishell
+$>","0
+0",
+CD 💿 PWD,"export CDPATH=/
+cd $HOME/..",NON GERE,,,,FALSE,$>,"0
+0","A gerer ?
+/home"
+CD 💿 PWD,"export CDPATH=/
+cd home/vietdu91",NON GERE,,,,FALSE,"/home/vietdu91
+$>","0
+0","A gerer ?
+/home/vietdu91"
+CD 💿 PWD,"export CDPATH=./
+cd .",NON GERE,,,,FALSE,$>,"0
+0","A gerer ?
+/home/vietdu91/42_works/minishell"
+CD 💿 PWD,"export CDPATH=./
+cd ..",NON GERE,,,,FALSE,$>,"0
+0","A gerer ?
+/home/vietdu91/42_works"
+BÂTARDS 🖕,"chmod 000 minishell
+./minishell",,,,,FALSE,"bash: ./minishell : Permission denied
+$>",126,
+BÂTARDS 🖕,ls hola,,,,,FALSE,"ls: cannot access 'hola': No such file or directory
+$>",2,
+BÂTARDS 🖕,./Makefile,,,,,FALSE,"bash: ./Makefile: Permission denied
+$>",126,
+BÂTARDS 🖕,./minishell,,,,,FALSE,$>,0,"Relance le Minishell
+Il faut donc 2 fois exit pour exit"
+BÂTARDS 🖕,"env | grep SHLVL
+./minishell
+env | grep SHLVL
+exit
+env | grep SHLVL",NON GERE,,,,FALSE,$>,"0
+0
+0
+0
+0",
+BÂTARDS 🖕,"touch hola
+./hola",,,,,FALSE,"bash: ./hola: Permission denied
+$>",126,
+BÂTARDS 🖕,"env|""wc"" -l",,,,,FALSE,"66
+$>",0,
+BÂTARDS 🖕,"env|""wc ""-l",,,,,FALSE,"bash: wc -l: command not found
+$>",127,
+BÂTARDS 🖕,expr 1 + 1,,,,,FALSE,"2
+$>",0,
+BÂTARDS 🖕,expr $? + $?,,,,,FALSE,"0
+$>",0,Fait la somme de la valeur de $?
+BÂTARDS 🖕,"env -i ./minishell
+env",,,,,FALSE,"PWD=/mnt/nfs/homes/emtran/Desktop/42_minishell
+SHLVL=1
+_=/usr/bin/env
+$>",0,
+BÂTARDS 🖕,"env -i ./minishell
+export",,,,,FALSE,"export OLDPWD
+export PWD=""/mnt/nfs/homes/emtran/Desktop/42_minishell""
+export SHLVL=""1""
+$>",0,
+BÂTARDS 🖕,"env -i ./minishell
+cd",,,,,FALSE,"bash: cd: HOME not set
+$>",1,
+BÂTARDS 🖕,"env -i ./minishell
+cd ~",NON GERE,,,,FALSE,$>,0,/home/vietdu91
+EXIT  ⛔,exit,,,,,FALSE,"exit
+~/minishell $>",0,
+EXIT  ⛔,exit exit,,,,,FALSE,"exit
+bash: exit: exit: numeric argument required
+~/minishell $>",2,
+EXIT  ⛔,exit hola,,,,,FALSE,"exit
+bash: exit: hola: numeric argument required
+~/minishell $>",2,
+EXIT  ⛔,exit hola que tal,,,,,FALSE,"exit
+bash: exit: hola: numeric argument required
+~/minishell $>",2,
+EXIT  ⛔,exit 42,,,,,FALSE,"exit
+~/minishell $>",42,
+EXIT  ⛔,exit 000042,,,,,FALSE,"exit
+~/minishell $>",42,
+EXIT  ⛔,exit 666,,,,,FALSE,"exit
+~/minishell $>",154,
+EXIT  ⛔,exit 666 666,,,,,FALSE,"exit
+bash: exit: too many arguments
+$>",1,
+EXIT  ⛔,exit -666 666,,,,,FALSE,"exit
+bash: exit: too many arguments
+$>",1,
+EXIT  ⛔,exit hola 666,,,,,FALSE,"exit
+bash: exit: hola: numeric argument required
+~/minishell $>",2,
+EXIT  ⛔,exit 666 666 666 666,,,,,FALSE,"exit
+bash: exit: too many arguments
+$>",1,
+EXIT  ⛔,exit 666 hola 666,,,,,FALSE,"exit
+bash: exit: too many arguments",1,
+EXIT  ⛔,exit hola 666 666,,,,,FALSE,"exit
+bash: exit: hola: numeric argument required
+~/minishell $>",2,
+EXIT  ⛔,exit 259,,,,,FALSE,"exit
+~/minishell $>",3,
+EXIT  ⛔,exit -4,,,,,FALSE,"exit
+~/minishell $>",252,
+EXIT  ⛔,exit -42,,,,,FALSE,"exit
+~/minishell $>",214,
+EXIT  ⛔,exit -0000042,,,,,FALSE,"exit
+~/minishell $>",214,
+EXIT  ⛔,exit -259,,,,,FALSE,"exit
+~/minishell $>",253,
+EXIT  ⛔,exit -666,,,,,FALSE,"exit
+~/minishell $>",102,
+EXIT  ⛔,exit +666,,,,,FALSE,"exit
+~/minishell $>",154,
+EXIT  ⛔,exit 0,,,,,FALSE,"exit
+~/minishell $>",0,
+EXIT  ⛔,exit +0,,,,,FALSE,"exit
+~/minishell $>",0,
+EXIT  ⛔,exit -0,,,,,FALSE,"exit
+~/minishell $>",0,
+EXIT  ⛔,exit +42,,,,,FALSE,"exit
+~/minishell $>",42,
+EXIT  ⛔,exit -69 -96,,,,,FALSE,"exit
+bash: exit: too many arguments
+$>",1,
+EXIT  ⛔,exit --666,,,,,FALSE,"exit
+bash: exit: --666: numeric argument required
+~/minishell $>",2,
+EXIT  ⛔,exit ++++666,,,,,FALSE,"exit
+bash: exit: ++++666: numeric argument required
+~/minishell $>",2,
+EXIT  ⛔,exit ++++++0,,,,,FALSE,"exit
+bash: exit: ++++++0: numeric argument required
+~/minishell $>",2,
+EXIT  ⛔,exit ------0,,,,,FALSE,"exit
+bash: exit: ------0: numeric argument required
+~/minishell $>",2,
+EXIT  ⛔,"exit ""666""",,,,,FALSE,"exit
+~/minishell $>",154,
+EXIT  ⛔,exit '666',,,,,FALSE,"exit
+~/minishell $>",154,
+EXIT  ⛔,exit '-666',,,,,FALSE,"exit
+~/minishell $>",102,Marche aussi pour les double quotes
+EXIT  ⛔,exit '+666',,,,,FALSE,"exit
+~/minishell $>",154,Marche aussi pour les double quotes
+EXIT  ⛔,exit '----666',,,,,FALSE,"exit
+bash: exit: ----666: numeric argument required
+~/minishell $>",2,Marche aussi pour les double quotes
+EXIT  ⛔,exit '++++666',,,,,FALSE,"exit
+bash: exit: ++++666: numeric argument required
+~/minishell $>",2,Marche aussi pour les double quotes
+EXIT  ⛔,exit '6'66,,,,,FALSE,"exit
+~/minishell $>",154,Marche aussi pour les double quotes
+EXIT  ⛔,exit '2'66'32',,,,,FALSE,"exit
+~/minishell $>",8,Marche aussi pour les double quotes
+EXIT  ⛔,"exit ""'666'""",,,,,FALSE,"exit
+bash: exit: '666': numeric argument required
+~/minishell $>",2,
+EXIT  ⛔,"exit '""666""'",,,,,FALSE,"exit
+bash: exit: ""666"": numeric argument required
+~/minishell $>",2,
+EXIT  ⛔,"exit '666'""666""666",,,,,FALSE,"exit
+~/minishell $>",170,
+EXIT  ⛔,"exit +'666'""666""666",,,,,FALSE,"exit
+~/minishell $>",170,
+EXIT  ⛔,"exit -'666'""666""666",,,,,FALSE,"exit
+~/minishell $>",86,
+EXIT  ⛔,exit 9223372036854775807,,,,,FALSE,"exit
+~/minishell $>",255,
+EXIT  ⛔,exit 9223372036854775808,,,,,FALSE,"exit
+bash: exit: 9223372036854775808: numeric argument required
+~/minishell $>",2,
+EXIT  ⛔,exit -9223372036854775808,,,,,FALSE,"exit
+~/minishell $>",0,
+EXIT  ⛔,exit -9223372036854775809,,,,,FALSE,"exit
+bash: exit: -9223372036854775809: numeric argument required
+~/minishell $>",2,
+PIPES 🚬,cat | cat | cat | ls,,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+
+
+
+$>",0,"Apparaît la ligne ls
+Et 3 retours à la ligne avec la touche Entrée"
+PIPES 🚬,ls | exit,,,,,FALSE,$>,0,"Ne fait rien
+
+Chaque commande d'un pipeline est exécutée dans son propre sous-shell, qui est un processus distinct"
+PIPES 🚬,ls | exit 42,,,,,FALSE,$>,42,Ne fait rien
+PIPES 🚬,exit | ls,,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+$>",0,
+PIPES 🚬,"echo hola > bonjour
+exit | cat -e bonjour",,,,,FALSE,"hola$
+$>",0,
+PIPES 🚬,"echo hola > bonjour
+cat -e bonjour | exit",,,,,FALSE,$>,0,
+PIPES 🚬,echo | echo,,,,,FALSE,"
+$>",0,
+PIPES 🚬,echo hola | echo que tal,,,,,FALSE,"que tal
+$>",0,
+PIPES 🚬,pwd | echo hola,,,,,FALSE,"hola
+$>",0,
+PIPES 🚬,env | echo hola,,,,,FALSE,"hola
+$>",0,
+PIPES 🚬,echo oui | cat -e,,,,,FALSE,"oui$
+$>",0,
+PIPES 🚬,echo oui | echo non | echo hola | grep oui,,,,,FALSE,$>,0,
+PIPES 🚬,echo oui | echo non | echo hola | grep non,,,,,FALSE,$>,0,
+PIPES 🚬,echo oui | echo non | echo hola | grep hola,,,,,FALSE,"hola
+$>",0,
+PIPES 🚬,echo hola | cat -e | cat -e | cat -e,,,,,FALSE,"hola$$$
+$>",0,
+PIPES 🚬,"cd .. | echo ""hola""",,,,,FALSE,"hola
+$>",0,/home/vietdu91/42_works/minishell
+PIPES 🚬,"cd / | echo ""hola""",,,,,FALSE,"hola
+$>",0,/home/vietdu91/42_works/minishell
+PIPES 🚬,cd .. | pwd,,,,,FALSE,"/home/vietdu91/42_works/minishell
+$>",0,/home/vietdu91/42_works/minishell
+PIPES 🚬,"ifconfig | grep "":""",,,,,FALSE,"docker0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+   ether 02:42:27:cf:95:49  txqueuelen 0  (Ethernet)
+[...]
+$>",0,
+PIPES 🚬,ifconfig | grep hola,,,,,FALSE,$>,1,
+PIPES 🚬,whoami | grep $USER,,,,,FALSE,"vietdu91
+$>",0,
+PIPES 🚬,"whoami | grep $USER > /tmp/bonjour
+cat /tmp/bonjour",,,,,FALSE,"vietdu91
+$>",0,
+PIPES 🚬,"whoami | cat -e | cat -e > /tmp/bonjour
+cat /tmp/bonjour",,,,,FALSE,"vietdu91$$
+$>",0,
+PIPES 🚬,"whereis ls | cat -e | cat -e > /tmp/bonjour
+cat /tmp/bonjour",,,,,FALSE,"ls: /usr/bin/ls /usr/share/man/man1/ls.1posix.gz /usr/share/man/man1/ls.1.gz$$
+$>",0,
+PIPES 🚬,ls | hola,,,,,FALSE,"bash: hola: command not found
+$>",127,
+PIPES 🚬,ls | ls hola,,,,,FALSE,"ls: cannot access 'hola': No such file or directory
+$>",2,
+PIPES 🚬,ls | ls | hola,,,,,FALSE,"bash: hola: command not found
+$>",127,
+PIPES 🚬,ls | hola | ls,,,,,FALSE,"bash: hola: command not found
+crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+$>",0,
+PIPES 🚬,ls | ls | hola | rev,,,,,FALSE,"bash: hola: command not found
+$>",0,
+PIPES 🚬,ls | ls | echo hola | rev,,,,,FALSE,"aloh
+$>",0,
+PIPES 🚬,"ls -la | grep "".""",,,,,FALSE,"total 16
+drwx------  2 vietdu91 [...] .
+drwxrwxewt 51 root     [...] ..
+-rwxr-xr-x  8 vietdu91 [...] crashtest.c
+[...]
+$> ",0,Sort la commande entiere de ls -la
+PIPES 🚬,"ls -la | grep ""'.'""",,,,,FALSE,$>,0,
+PIPES 🚬,echo test.c | cat -e| cat -e| cat -e| cat -e| cat -e| cat -e| cat -e| cat -e|cat -e|cat -e|cat -e,,,,,FALSE,"test.c$$$$$$$$$$$
+$>",0,
+PIPES 🚬,"ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls
+|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls",,,,,FALSE,"crashtest.c Docs Dockers Drawings Makefile minishell philosophers srcs test.c
+$>",0,
+PIPES 🚬,echo hola | cat | cat | cat | cat | cat | grep hola,,,,,FALSE,"hola
+$>",0,
+PIPES 🚬,echo hola | cat,,,,,FALSE,"hola
+$>",0,
+PIPES 🚬,echo hola| cat,,,,,FALSE,"hola
+$>",0,
+PIPES 🚬,echo hola |cat,,,,,FALSE,"hola
+$>",0,
+PIPES 🚬,echo hola|cat,,,,,FALSE,"hola
+$>",0,
+PIPES 🚬,echo hola || cat,NON GERE,,,,FALSE,"hola
+$>",0,[BONUS]
+PIPES 🚬,echo hola ||| cat,,,,,FALSE,"bash: syntax error near
+unexpected token `|'
+$>",2,
+PIPES 🚬,ech|o hola | cat,,,,,FALSE,"bash: ech: command not found
+bash: o: command not found
+$>",127,
+PIPES 🚬,cat Makefile | cat -e | cat -e,,,,,FALSE,"[...]
+$$
+.PHONY:    all clean fclean re$$
+$>",0,
+PIPES 🚬,cat Makefile | grep srcs | cat -e,,,,,FALSE,"objs/%.o:                srcs/%.c$
+                        @norminette srcs/*$
+$>",0,
+PIPES 🚬,cat Makefile | grep srcs | grep srcs | cat -e,,,,,FALSE,"objs/%.o:                srcs/%.c$
+                        @norminette srcs/*$
+$>",0,
+PIPES 🚬,cat Makefile | grep pr | head -n 5 | cd file_not_exist,,,,,FALSE,"bash: cd: file_not_exist: No such file or directory
+$>",1,
+PIPES 🚬,cat Makefile | grep pr | head -n 5 | hello,,,,,FALSE,"bash: hello: command not found
+$>",127,
+PIPES 🚬,export HOLA=bonjour | cat -e | cat -e,,,,,FALSE,$>,0,
+PIPES 🚬,unset HOLA | cat -e,,,,,FALSE,$>,0,
+PIPES 🚬,"export HOLA | echo hola
+env | grep PROUT",,,,,FALSE,"hola
+$>
+$>",0,
+PIPES 🚬,export | echo hola,,,,,FALSE,"hola
+$>",0,
+PIPES 🚬,sleep 3 | sleep 3,,,,,FALSE,$>,0,Le prompt apparait au bout de 3 secondes
+PIPES 🚬,time sleep 3 | sleep 3,,,,,FALSE,"real	0m3.002s
+user	0m0.003s
+sys	0m0.001s
+$>",0,Le prompt apparait au bout de 3 secondes
+PIPES 🚬,sleep 3 | exit,,,,,FALSE,$>,0,Le prompt apparait au bout de 3 secondes
+PIPES 🚬,exit | sleep 3,,,,,FALSE,$>,0,Le prompt apparait au bout de 3 secondes
+PIPES 🚬,"echo hola > a
+>>b echo que tal
+cat a | <b cat | cat > c | cat",,,,,FALSE,$>,0,
+&&  🍒  ||,pwd && ls,NON GERE,,,,FALSE,"/home/vietdu91/42_works/minishell
+crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+$>",0,[BONUS]
+&&  🍒  ||,pwd || ls,NON GERE,,,,FALSE,"/home/vietdu91/42_works/minishell
+$>",0,[BONUS]
+&&  🍒  ||,echo hola || echo bonjour,NON GERE,,,,FALSE,"hola
+$>",0,[BONUS]
+&&  🍒  ||,echo hola && echo bonjour,NON GERE,,,,FALSE,"hola
+bonjour
+$>",0,[BONUS]
+&&  🍒  ||,echo bonjour || echo hola,NON GERE,,,,FALSE,"bonjour
+$>",0,[BONUS]
+&&  🍒  ||,echo bonjour && echo hola,NON GERE,,,,FALSE,"bonjour
+hola
+$>",0,[BONUS]
+&&  🍒  ||,echo -n bonjour && echo -n hola,NON GERE,,,,FALSE,bonjourhola$>,0,[BONUS]
+&&  🍒  ||,pwd && ls && echo hola,NON GERE,,,,FALSE,"/home/vietdu91/42_works/minishell
+crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+hola
+$>",0,[BONUS]
+&&  🍒  ||,pwd || ls && echo hola,NON GERE,,,,FALSE,"/home/vietdu91/42_works/minishell
+hola
+$>",0,[BONUS]
+&&  🍒  ||,pwd && ls || echo hola,NON GERE,,,,FALSE,"/home/vietdu91/42_works/minishell
+crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+$>",0,[BONUS]
+&&  🍒  ||,pwd || ls || echo hola,NON GERE,,,,FALSE,"/home/vietdu91/42_works/minishell
+$>",0,[BONUS]
+&&  🍒  ||,"ls || export """"",NON GERE,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+$>",0,[BONUS]
+&&  🍒  ||,"export """" || ls",NON GERE,,,,FALSE,"bash: export: `': not a valid identifier
+crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+$>",0,[BONUS]
+&&  🍒  ||,"ls && export """"",NON GERE,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+bash: export: `': not a valid identifier
+$>",1,[BONUS]
+&&  🍒  ||,"export """" && ls",NON GERE,,,,FALSE,"bash: export: `': not a valid identifier
+$>",1,[BONUS]
+&&  🍒  ||,ls || ;,NON GERE,,,,FALSE,"bash: syntax error near
+unexpected token `;'
+$>",2,[BONUS] Marche pour les metacharacters |&;()
+&&  🍒  ||,; || ls,NON GERE,,,,FALSE,"bash: syntax error near
+unexpected token `;'
+$>",2,[BONUS] Marche pour les metacharacters |&;()
+&&  🍒  ||,ls && ;,NON GERE,,,,FALSE,"bash: syntax error near
+unexpected token `;'
+$>",2,[BONUS] Marche pour les metacharacters |&;()
+&&  🍒  ||,; && ls,NON GERE,,,,FALSE,"bash: syntax error near
+unexpected token `;'
+$>",2,[BONUS] Marche pour les metacharacters |&;()
+&&  🍒  ||,ls || <,NON GERE,,,,FALSE,"bash: syntax error near unexpected token `newline' 
+$>",2,[BONUS] Marche pour les metacharacters <>
+&&  🍒  ||,ls && <,NON GERE,,,,FALSE,"bash: syntax error near unexpected token `newline' 
+$>",2,[BONUS] Marche pour les metacharacters <>
+&&  🍒  ||,cat | echo || ls,NON GERE,,,,FALSE,"
+
+$>",0,[BONUS]
+&&  🍒  ||,cat | echo && ls,NON GERE,,,,FALSE,"
+
+crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+$>",0,[BONUS]
+&&  🍒  ||,ls || cat | echo,NON GERE,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+$>",0,[BONUS]
+&&  🍒  ||,ls && cat | echo,NON GERE,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+
+
+$>",0,[BONUS]
+&&  🍒  ||,"export """" && unset """"",NON GERE,,,,FALSE,bash: export: `': not a valid identifier,1,[BONUS]
+( PARENTHESES ),(ls),NON GERE,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+$>",0,[BONUS]
+( PARENTHESES ),( ( ls ) ),NON GERE,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+$>",0,[BONUS]
+( PARENTHESES ),( ( ) ls ),NON GERE,,,,FALSE,"bash: syntax error near unexpected token `)'
+$>",2,[BONUS]
+( PARENTHESES ),ls && (ls),NON GERE,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+$>",0,[BONUS]
+( PARENTHESES ),(ls && pwd),NON GERE,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+/home/vietdu91/42_works/minishell
+$>",0,[BONUS]
+( PARENTHESES ),( ( ls&&pwd ) ),NON GERE,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+/home/vietdu91/42_works/minishell
+$>",0,[BONUS]
+( PARENTHESES ),( ( ls ) &&pwd ),NON GERE,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+/home/vietdu91/42_works/minishell
+$>",0,[BONUS]
+( PARENTHESES ),(ls && ( ( pwd ) ) ),NON GERE,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  srcs  test.c
+/home/vietdu91/42_works/minishell
+$>",0,[BONUS]
+( PARENTHESES ),"(ls && pwd) > hola
+cat hola",NON GERE,,,,FALSE,"crashtest.c
+Docs
+Dockers
+Drawings
+Makefile
+minishell
+philosophers
+srcs
+test.c
+/home/vietdu91/42_works/minishell
+$>",0,[BONUS]
+( PARENTHESES ),> hola ls && pwd,NON GERE,,,,FALSE,"/home/vietdu91/42_works/minishell
+$>",0,[BONUS]
+( PARENTHESES ),> hola (ls && pwd),NON GERE,,,,FALSE,"bash: syntax error near unexpected token `('
+$>",2,[BONUS]
+( PARENTHESES ),"(> pwd)
+ls",NON GERE,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  pwd  srcs  test.c
+$>",0,[BONUS]
+( PARENTHESES ),"(< pwd)
+ls",NON GERE,,,,FALSE,$>,0,[BONUS] Si pwd existe
+( PARENTHESES ),(< pwd),NON GERE,,,,FALSE,"bash: pwd: No such file or directory
+$>",1,[BONUS] Si pwd n'existe pas
+( PARENTHESES ),( ( ( ( ( pwd) ) ) ) ),NON GERE,,,,FALSE,"/home/vietdu91/42_works/minishell
+$>",0,[BONUS]
+( PARENTHESES ),() pwd,NON GERE,,,,FALSE,"bash: syntax error near unexpected token `)'
+$>",2,[BONUS]
+( PARENTHESES ),> pwd (ls),NON GERE,,,,FALSE,"bash: syntax error near unexpected token `('
+$>",2,[BONUS]
+( PARENTHESES ),(ls||pwd)&&(ls||pwd),NON GERE,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  pwd  srcs  test.c
+crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  pwd  srcs  test.c
+$>",0,[BONUS]
+( PARENTHESES ),(lss||pwd)&&(lss||pwd),NON GERE,,,,FALSE,"bash: lss: command not found
+/home/vietdu91/42_works/minishell
+bash: lss: command not found
+/home/vietdu91/42_works/minishell
+$>",0,[BONUS]
+( PARENTHESES ),(lss&&pwd)&&(lss&&pwd),NON GERE,,,,FALSE,"bash: lss: command not found
+$>",127,[BONUS]
+( PARENTHESES ),"(ls && pwd | wc) > hola
+cat hola",NON GERE,,,,FALSE,"crashtest.c
+Docs
+Dockers
+Drawings
+Makefile
+minishell
+philosophers
+srcs
+test.c
+      1       1      34
+$>","0
+0",[BONUS]
+( PARENTHESES ),"(ls && pwd | wc) > hola
+(ls && pwd | wc) > hola
+cat hola",NON GERE,,,,FALSE,"crashtest.c
+Docs
+Dockers
+Drawings
+Makefile
+minishell
+philosophers
+srcs
+test.c
+      1       1      34
+$>","0
+0
+0",[BONUS]
+( PARENTHESES ),"(ls && pwd | wc) >> hola
+echo hey&&(ls && pwd | wc) > hola
+cat hola",NON GERE,,,,FALSE,"hey
+$>
+crashtest.c
+Docs
+[...]
+srcs
+test.c
+      1       1      34
+crashtest.c
+Docs
+[...]
+srcs
+test.c
+      1       1      34
+$>","0
+0
+0",[BONUS]
+( PARENTHESES ),(pwd | wc) < hola,NON GERE,,,,FALSE,"      1       1      34
+$>",0,[BONUS]
+( PARENTHESES ),(ls && pwd | wc) < hola,NON GERE,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  pwd  srcs  test.c
+      1       1      34
+$>",0,[BONUS]
+( PARENTHESES ),(ls -z || pwd | wc) < hola,NON GERE,,,,FALSE,"ls: invalid option -- 'z'
+      1       1      34
+$>",0,[BONUS]
+( PARENTHESES ),"echo hey > hola
+(pwd | wc) < hola",NON GERE,,,,FALSE,"      1       1      34
+$>",0,[BONUS]
+( PARENTHESES ),"echo hey > hola
+(ls && pwd | wc) < hola",NON GERE,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  pwd  srcs  test.c
+      1       1      34
+$>",0,[BONUS]
+( PARENTHESES ),"echo hey > hola
+(ls -z || pwd | wc) < hola",NON GERE,,,,FALSE,"ls: invalid option -- 'z'
+      1       1      34
+$>",0,[BONUS]
+( PARENTHESES ),(ls -z || pwd && ls),NON GERE,,,,FALSE,"ls: invalid option -- 'z'
+/home/vietdu91/42_works/minishell
+crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  pwd  srcs  test.c
+$>",0,[BONUS]
+( PARENTHESES ),ls || (cat Makefile|grep srcs) && (pwd|wc),NON GERE,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  pwd  srcs  test.c
+      1       1      34
+$>",0,[BONUS]
+( PARENTHESES ),ls -z && (ls) && (pwd),NON GERE,,,,FALSE,"ls: invalid option -- 'z'
+$>",130,[BONUS]
+( PARENTHESES ),"(ls > Docs/hey && pwd) > hola
+cat hola
+cat Docs/hey",NON GERE,,,,FALSE,"/home/vietdu91/42_works/minishell
+$>
+crashtest.c
+Docs
+[...]
+srcs
+test.c
+$>","0
+0
+0",[BONUS]
+( PARENTHESES ),"ls > Docs/hey && pwd > hola
+cat hola
+cat Docs/hey",NON GERE,,,,FALSE,"/home/vietdu91/42_works/minishell
+$>
+crashtest.c
+Docs
+[...]
+srcs
+test.c
+$>","0
+0
+0",[BONUS]
+( PARENTHESES ),cd ../.. && pwd && pwd,NON GERE,,,,FALSE,"/home/vietdu91/
+/home/vietdu91/
+$>",0,[BONUS]
+( PARENTHESES ),(cd ../.. && pwd) && pwd,NON GERE,,,,FALSE,"/home/vietdu91/
+/home/vietdu91/42_works/minishell
+$>",0,[BONUS]
+( PARENTHESES ),"ls -z || cd ../../..&&pwd
+pwd",NON GERE,,,,FALSE,"ls: invalid option -- 'z'
+/home/vietdu91
+$>
+/home/vietdu91
+$>","0
+0",[BONUS]
+( PARENTHESES ),"ls -z || (cd ../../..&&pwd)
+pwd",NON GERE,,,,FALSE,"ls: invalid option -- 'z'
+/home/vietdu91
+$>
+/home/vietdu91/42_works/minishell
+$>","0
+0",[BONUS]
+ REDIRECTIONS ,"echo hola > bonjour
+cat bonjour",,,,,FALSE,"hola
+$>","0
+0",
+ REDIRECTIONS ,"echo que tal >> bonjour
+cat bonjour",,,,,FALSE,"hola
+que tal
+$>","0
+0",
+ REDIRECTIONS ,"echo hola > bonjour
+echo que tal >> bonjour
+cat < bonjour",,,,,FALSE,"$>
+$>
+hola
+que tal
+$>","0
+0
+0",
+ REDIRECTIONS ,"echo hola > bonjour
+rm bonjour
+echo que tal >> bonjour
+cat < bonjour",,,,,FALSE,"que tal
+$>","0
+0
+0
+0",
+ REDIRECTIONS ,"echo hola que tal > bonjour
+cat bonjour",,,,,FALSE,"hola que tal
+$>","0
+0",
+ REDIRECTIONS ,"echo hola que tal > /tmp/bonjour
+cat -e /tmp/bonjour",,,,,FALSE,"hola que tal$
+$>","0
+0",
+ REDIRECTIONS ,"export HOLA=hey
+echo bonjour > $HOLA
+echo $HOLA",,,,,FALSE,"$>
+hola
+$>","0
+0
+0",Ne fait rien
+ REDIRECTIONS ,"whereis grep > Docs/bonjour
+cat Docs/bonjour",,,,,FALSE,"grep: /usr/bin/grep /usr/share/man/man1/grep.1.gz /usr/share/man/man1/grep.1posix.gz /usr/share/info/grep.info.gz
+$>","0
+0",
+ REDIRECTIONS ,"ls -la > Docs/bonjour
+cat Docs/bonjour",,,,,FALSE,"total 16
+drwx------  2 vietdu91 [...] .
+drwxrwxewt 51 root     [...] ..
+-rwxr-xr-x  8 vietdu91 [...] crashtest.c
+[...]
+$> ","0
+0",
+ REDIRECTIONS ,"pwd>bonjour
+cat bonjour",,,,,FALSE,"/home/vietdu91/42_works/minishell
+$>","0
+0",
+ REDIRECTIONS ,"pwd >                     bonjour
+cat bonjour",,,,,FALSE,"/home/vietdu91/42_works/minishell
+$>","0
+0",
+ REDIRECTIONS ,echo hola > > bonjour,,,,,FALSE,"bash: syntax error near unexpected token `>'
+$>",2,
+ REDIRECTIONS ,echo hola < < bonjour,,,,,FALSE,"bash: syntax error near unexpected token `<'
+$>",2,
+ REDIRECTIONS ,echo hola >>> bonjour,,,,,FALSE,"bash: syntax error near unexpected token `>'
+$>",2,
+ REDIRECTIONS ,"> bonjour echo hola
+cat bonjour",,,,,FALSE,"hola
+$>","0
+0",
+ REDIRECTIONS ,"> bonjour | echo hola
+cat bonjour",,,,,FALSE,"hola
+$>
+$>","0
+0",
+ REDIRECTIONS ,"prout hola > bonjour
+ls",,,,,FALSE,"bash: prout: command not found
+$>
+bonjour [...]","127
+0","Erreur mais file ""bonjour"" cree tout de meme"
+ REDIRECTIONS ,"echo hola > hello >> hello >> hello
+ls
+cat hello",,,,,FALSE,"$>
+hello
+$>
+hola
+$>","0
+0
+0",
+ REDIRECTIONS ,"echo hola > hello >> hello >> hello
+echo hola >> hello
+cat < hello",,,,,FALSE,"hola
+hola
+$>","0
+0
+0",
+ REDIRECTIONS ,"echo hola > hello >> hello >> hello
+echo hola >> hello
+echo hola > hello >> hello >> hello
+cat < hello",,,,,FALSE,"hola
+$>","0
+0
+0
+0",
+ REDIRECTIONS ,"echo hola >> hello >> hello > hello
+echo hola >> hello
+cat < hello",,,,,FALSE,"hola
+hola
+$>","0
+0
+0",
+ REDIRECTIONS ,"echo hola >> hello >> hello > hello
+echo hola >> hello
+echo hola >> hello >> hello > hello
+cat < hello",,,,,FALSE,"hola
+$>","0
+0
+0
+0",
+ REDIRECTIONS ,"echo hola > hello
+echo hola >> hello >> hello >> hello
+echo hola >> hello
+cat < hello",,,,,FALSE,"hola
+hola
+hola
+$>","0
+0
+0
+0",
+ REDIRECTIONS ,"echo hola > hello
+echo hey > bonjour
+echo <bonjour <hello",,,,,FALSE,"
+$>","0
+0
+0",
+ REDIRECTIONS ,"echo hola > hello
+echo hey > bonjour
+echo <hello <bonjour",,,,,FALSE,"
+$>","0
+0
+0",
+ REDIRECTIONS ,"echo hola > bonjour
+echo hey > hello
+rm bonjour hello
+echo hola > bonjour > hello > bonjour
+cat bonjour
+cat hello",,,,,FALSE,"hola
+$>
+$>","0
+0
+0
+0
+0
+0",
+ REDIRECTIONS ,"echo hola > bonjour
+echo hey > hello
+echo hola > bonjour > hello > bonjour
+cat bonjour
+cat hello",,,,,FALSE,"hola
+$>
+$>","0
+0
+0
+0
+0",
+ REDIRECTIONS ,"echo hola > bonjour
+echo hey > hello
+rm bonjour hello
+echo hola > bonjour >> hello > bonjour
+cat bonjour
+cat hello",,,,,FALSE,"hola
+$>
+$>","0
+0
+0
+0
+0
+0",
+ REDIRECTIONS ,"echo hola > bonjour
+echo hey > hello
+echo hola > bonjour > hello > bonjour
+cat bonjour
+cat hello",,,,,FALSE,"hola
+$>
+$>","0
+0
+0
+0
+0",
+ REDIRECTIONS ,"echo hola > bonjour
+echo hey > hello
+rm bonjour hello
+echo hola > bonjour > hello >> bonjour
+cat bonjour
+cat hello",,,,,FALSE,"hola
+$>
+$>","0
+0
+0
+0
+0
+0",
+ REDIRECTIONS ,"echo hola > bonjour
+echo hey > hello
+echo hola > bonjour > hello >> bonjour
+cat bonjour
+cat hello",,,,,FALSE,"hola
+$>
+$>","0
+0
+0
+0
+0",
+ REDIRECTIONS ,"echo hola > bonjour
+echo hey > hello
+rm bonjour hello
+echo hola >> bonjour > hello > bonjour
+cat bonjour
+cat hello",,,,,FALSE,"hola
+$>
+$>","0
+0
+0
+0
+0
+0",
+ REDIRECTIONS ,"echo hola > bonjour
+echo hey > hello
+echo hola >> bonjour > hello > bonjour
+cat bonjour
+cat hello",,,,,FALSE,"hola
+$>
+$>","0
+0
+0
+0
+0",
+ REDIRECTIONS ,"echo hola > bonjour
+echo hey > hello
+rm bonjour hello
+echo hola >> bonjour >> hello >> bonjour
+cat bonjour
+cat hello",,,,,FALSE,"hola
+$>
+$>","0
+0
+0
+0
+0
+0",
+ REDIRECTIONS ,"echo hola > bonjour
+echo hey > hello
+echo hola >> bonjour >> hello >> bonjour
+cat bonjour
+cat hello",,,,,FALSE,"hola
+hola
+$>
+hey
+$>","0
+0
+0
+0
+0",
+ REDIRECTIONS ,"> bonjour echo hola bonjour
+cat bonjour",,,,,FALSE,"bonjour hola
+$>","0
+0",
+ REDIRECTIONS ,">bonjour echo > hola>bonjour>hola>>bonjour>hola hey >bonjour hola >hola
+cat bonjour
+cat hola",,,,,FALSE,"$>
+$>
+hey hola
+$>","0
+0
+0",
+ REDIRECTIONS ,"echo bonjour > hola1
+echo hello > hola2
+echo 2 >hola1 >> hola2
+ls
+cat hola1
+cat hola2",,,,,FALSE,"hola1  hola2  [...]
+$>
+$>
+hello
+2
+$>","0
+0
+0
+0
+0
+0",
+ REDIRECTIONS ,"echo bonjour > hola1
+echo hello > hola2
+echo 2 >>hola1 > hola2
+ls
+cat hola1
+cat hola2",,,,,FALSE,"hola1  hola2  [...]
+$>
+bonjour
+$>
+2
+$>","0
+0
+0
+0
+0
+0",
+ REDIRECTIONS ,"> pwd
+ls",,,,,FALSE,"pwd
+$>","0
+0",
+ REDIRECTIONS ,< pwd,,,,,FALSE,"bash: pwd: No such file or directory
+$>",1,
+ REDIRECTIONS ,< Makefile .,NON GERE,,,,FALSE,".: not enough arguments
+$>",1,Voir pourquoi
+ REDIRECTIONS ,cat <pwd,,,,,FALSE,"bash: pwd: No such file or directory
+$>",1,
+ REDIRECTIONS ,cat <srcs/pwd,,,,,FALSE,"bash: srcs/pwd: No such file or directory
+$>",1,
+ REDIRECTIONS ,cat <../pwd,,,,,FALSE,"bash: ../pwd: No such file or directory
+$>",1,
+ REDIRECTIONS ,cat >>,,,,,FALSE,"bash: syntax error near unexpected token `newline' 
+$>",2,Marche aussi pour les autres operateurs de redirection
+ REDIRECTIONS ,cat >>>,,,,,FALSE,"bash: syntax error near unexpected token `>' 
+$>",2,
+ REDIRECTIONS ,cat >> <<,,,,,FALSE,"bash: syntax error near unexpected token `<<' 
+$>",2,
+ REDIRECTIONS ,cat >> > >> << >>,,,,,FALSE,"bash: syntax error near unexpected token `>' 
+$>",2,
+ REDIRECTIONS ,cat < ls,,,,,FALSE,"bash: ls: No such file or directory
+$>",1,
+ REDIRECTIONS ,cat < ls > ls,,,,,FALSE,"bash: ls: No such file or directory
+$>",1,
+ REDIRECTIONS ,"cat > ls1 < ls2
+ls",,,,,FALSE,"bash: ls2: No such file or directory
+$>
+ls1  [...]
+$>","1
+0",
+ REDIRECTIONS ,">>hola
+cat hola",,,,,FALSE,$>,"0
+0",
+ REDIRECTIONS ,"echo hola > bonjour
+cat < bonjour",,,,,FALSE,"hola
+$>","0
+0",
+ REDIRECTIONS ,"echo hola >bonjour
+cat <bonjour",,,,,FALSE,"hola
+$>","0
+0",
+ REDIRECTIONS ,"echo hola>bonjour
+cat<bonjour",,,,,FALSE,"hola
+$>","0
+0",
+ REDIRECTIONS ,"echo hola> bonjour
+cat< bonjour",,,,,FALSE,"hola
+$>","0
+0",
+ REDIRECTIONS ,"echo hola               >bonjour
+cat<                     bonjour",,,,,FALSE,"hola
+$>","0
+0",
+ REDIRECTIONS ,"echo hola          >     bonjour
+cat            <         bonjour",,,,,FALSE,"hola
+$>","0
+0",
+ REDIRECTIONS ,"echo hola > srcs/bonjour
+cat < srcs/bonjour",,,,,FALSE,"hola
+$>","0
+0",
+ REDIRECTIONS ,"echo hola >srcs/bonjour
+cat <srcs/bonjour",,,,,FALSE,"hola
+$>","0
+0",
+ REDIRECTIONS ,"echo hola > bonjour
+echo que tal >> bonjour
+cat < bonjour",,,,,FALSE,"hola
+que tal
+$>","0
+0
+0",
+ REDIRECTIONS ,"echo hola > bonjour
+rm bonjour
+echo que tal >> bonjour
+cat < bonjour",,,,,FALSE,"que tal
+$>","0
+0
+0
+0",
+ REDIRECTIONS ,"e'c'""h""o hola > bonjour
+cat 'bo'""n""jour",,,,,FALSE,"hola
+$>","0
+0",
+ REDIRECTIONS ,"echo hola > bonjour\ 1
+ls
+cat bonjour\ 1",NON GERE,,,,FALSE,"bonjour 1' [...]
+$>
+hola
+$>","0
+0
+0",
+ REDIRECTIONS ,"echo hola > bonjour hey
+ls
+cat bonjour
+cat hey",,,,,FALSE,"bonjour [...]
+$>
+hola hey
+$>
+cat: hey: No such file or directory
+$>","0
+0
+0
+1",
+ REDIRECTIONS ,"echo hola > srcs/bonjour
+echo hey > srcs/hello
+>srcs/bonjour >srcs/hello <prout
+cat srcs/bonjour srcs/hello",,,,,FALSE,"bash: prout: No such file or directory
+$>
+$>","0
+0
+1
+0",
+ REDIRECTIONS ,"echo hola > srcs/bonjour
+echo hey > srcs/hello
+rm srcs/bonjour srcs/hello
+>srcs/bonjour >srcs/hello <prout
+ls srcs
+cat srcs/bonjour srcs/hello",,,,,FALSE,"bash: prout: No such file or directory
+$>
+bonjour  hello
+$>
+$>","0
+0
+0
+1
+0
+0",
+ REDIRECTIONS ,"echo hola > srcs/bonjour
+echo hey > srcs/hello
+>srcs/bonjour <prout >srcs/hello 
+cat srcs/bonjour 
+cat srcs/hello",,,,,FALSE,"bash: prout: No such file or directory
+$>
+$>
+hey
+$>","0
+0
+1
+0
+0",
+ REDIRECTIONS ,"echo hola > srcs/bonjour
+echo hey > srcs/hello
+rm srcs/bonjour srcs/hello
+>srcs/bonjour <prout >srcs/hello 
+ls srcs
+cat srcs/bonjour",,,,,FALSE,"bash: prout: No such file or directory
+$>
+bonjour
+$>
+$>","0
+0
+0
+1
+0
+0",
+ REDIRECTIONS ,"echo hola > ../bonjour
+echo hey > ../hello
+>../bonjour >../hello <prout
+cat ../bonjour ../hello",,,,,FALSE,"bash: prout: No such file or directory
+$>
+$>","0
+0
+1
+0",
+ REDIRECTIONS ,"echo hola > ../bonjour
+echo hey > ../hello
+rm ../bonjour ../hello
+>../bonjour >../hello <prout
+ls ..
+cat ../bonjour ../hello",,,,,FALSE,"bash: prout: No such file or directory
+$>
+bonjour  hello
+$>
+$>","0
+0
+0
+1
+0
+0",
+ REDIRECTIONS ,"echo hola > ../bonjour
+echo hey > ../hello
+>../bonjour <prout >../hello 
+cat ../bonjour 
+cat ../hello",,,,,FALSE,"bash: prout: No such file or directory
+$>
+$>
+hey
+$>","0
+0
+1
+0
+0",
+ REDIRECTIONS ,"echo hola > ../bonjour
+echo hey > ../hello
+rm ../bonjour ../hello
+>../bonjour <prout >../hello 
+ls ..
+cat ../bonjour",,,,,FALSE,"bash: prout: No such file or directory
+$>
+bonjour
+$>
+$>","0
+0
+0
+1
+0
+0",
+ REDIRECTIONS ,"echo hola > srcs/bonjour
+echo hey > srcs/hello
+>srcs/bonjour >>srcs/hello <prout
+cat srcs/bonjour 
+cat srcs/hello",,,,,FALSE,"bash: prout: No such file or directory
+$>
+$>
+hey
+$>","0
+0
+1
+0
+0",
+ REDIRECTIONS ,"echo hola > srcs/bonjour
+echo hey > srcs/hello
+>>srcs/bonjour >srcs/hello <prout
+cat srcs/bonjour 
+cat srcs/hello",,,,,FALSE,"bash: prout: No such file or directory
+$>
+bonjour
+$>
+$>","0
+0
+1
+0
+0",
+ REDIRECTIONS ,"echo hola > srcs/bonjour
+echo hey > srcs/hello
+>>srcs/bonjour >>srcs/hello <prout
+cat srcs/bonjour 
+cat srcs/hello",,,,,FALSE,"bash: prout: No such file or directory
+$>
+bonjour
+$>
+hey
+$>","0
+0
+1
+0
+0",
+ REDIRECTIONS ,"echo hola > srcs/bonjour
+echo hey > srcs/hello
+>srcs/bonjour <prout >>srcs/hello
+cat srcs/bonjour 
+cat srcs/hello",,,,,FALSE,"bash: prout: No such file or directory
+$>
+$>
+hey
+$>","0
+0
+1
+0
+0",
+ REDIRECTIONS ,"echo hola > srcs/bonjour
+echo hey > srcs/hello
+>>srcs/bonjour <prout >srcs/hello
+cat srcs/bonjour 
+cat srcs/hello",,,,,FALSE,"bash: prout: No such file or directory
+$>
+bonjour
+$>
+hey
+$>","0
+0
+1
+0
+0",
+ REDIRECTIONS ,"echo hola > srcs/bonjour
+echo hey > srcs/hello
+>>srcs/bonjour <prout >>srcs/hello
+cat srcs/bonjour 
+cat srcs/hello",,,,,FALSE,"bash: prout: No such file or directory
+$>
+bonjour
+$>
+hey
+$>","0
+0
+1
+0
+0",
+ REDIRECTIONS ,"echo hola > srcs/bonjour
+echo hey > srcs/hello
+<prout >>srcs/bonjour >>srcs/hello
+cat srcs/bonjour 
+cat srcs/hello",,,,,FALSE,"bash: prout: No such file or directory
+$>
+bonjour
+$>
+hey
+$>","0
+0
+1
+0
+0",
+ REDIRECTIONS ,"echo hola > bonjour
+echo hey > hello
+<bonjour >hello
+cat bonjour 
+cat hello",,,,,FALSE,"hola
+$>
+>>","0
+0
+0
+0
+0",
+ REDIRECTIONS ,"echo hola > bonjour
+echo hey > hello
+>bonjour >hello < prout
+cat bonjour 
+cat hello",,,,,FALSE,"bash: prout: No such file or directory
+$>
+$>
+$>","0
+0
+1
+0
+0",
+ REDIRECTIONS ,"echo hola > bonjour
+echo hey > hello
+rm bonjour hello
+>bonjour >hello < prout
+cat bonjour 
+cat hello",,,,,FALSE,"bash: prout: No such file or directory
+$>
+$>
+$>","0
+0
+0
+1
+0
+0",
+ REDIRECTIONS ,"echo hola > bonjour
+echo hey > hello
+>bonjour <prout hello
+cat bonjour 
+cat hello",,,,,FALSE,"bash: prout: No such file or directory
+$>
+$>
+hey
+$>","0
+0
+1
+0
+0",
+ REDIRECTIONS ,"echo hola > bonjour
+echo hey > hello
+rm bonjour hello
+>bonjour <prout hello
+cat bonjour ",,,,,FALSE,"bash: prout: No such file or directory
+$>
+$>","0
+0
+0
+1
+0",Le fichier hello n'existe pas
+ REDIRECTIONS ,"echo hola > bonjour
+<bonjour cat | wc > bonjour
+cat bonjour",,,,,FALSE,"      0       0       0
+$>","0
+0
+0",
+ REDIRECTIONS ,"rm -f bonjour
+rm bonjour > bonjour
+ls -l bonjour",,,,,FALSE,ls: cannot access 'bonjour': No such file or directory,"0
+0
+2",
+ REDIRECTIONS ,"export HOLA=""bonjour hello""
+>$HOLA
+ls",,,,,FALSE,"'bonjour hello' [...]
+$>","0
+0
+0",
+ REDIRECTIONS ,"export HOLA=""bonjour hello""
+>""$HOLA""
+ls",,,,,FALSE,"'bonjour hello' [...]
+$>","0
+0
+0",
+ REDIRECTIONS ,"export HOLA=""bonjour hello""
+>$""HOLA""
+ls",,,,,FALSE,"HOLA [...]
+$>","0
+0
+0",
+ REDIRECTIONS ,"export HOLA=""bonjour hello""
+>$HOLA>hey
+ls",,,,,FALSE,"'bonjour hello' hey [...]
+$>","0
+0
+0",
+ REDIRECTIONS ,"export HOLA=""bonjour hello""
+>hey>$HOLA
+ls",,,,,FALSE,"'bonjour hello' hey [...]
+$>","0
+0
+0",
+ REDIRECTIONS ,"export HOLA=""bonjour hello""
+>hey>$HOLA>hey>hey
+ls",,,,,FALSE,"'bonjour hello' hey [...]
+$>","0
+0
+0",
+ REDIRECTIONS ,"export A=hey
+export A B=Hola D E C=""Que Tal""
+echo $PROUT$B$C > /tmp/a > /tmp/b > /tmp/c
+cat /tmp/a
+cat /tmp/b
+cat /tmp/c",,,,,FALSE,"$>
+$>
+$>
+HolaQue Tal
+$>","0
+0
+0
+0
+0
+0",
+ REDIRECTIONS ,<a cat <b <c,,,,,FALSE,"Prout
+$>",0,
+ REDIRECTIONS ,"<a cat <b <c
+cat a
+cat b
+cat c",,,,,FALSE,"$>
+$>
+$>
+Amour Tu es Horrible
+0123456789
+Prout
+$>","0
+0
+0
+0",
+ REDIRECTIONS ,">a ls >b >>c >d
+cat a
+cat b
+cat c
+cat d",,,,,FALSE,"$>
+$>
+$>
+Prout
+$>
+crashtest.c
+Docs
+[...]
+test.c
+$> ","0
+0
+0
+0
+0",
+ REDIRECTIONS ,">a ls >b >>c >d
+cat a
+cat b
+cat c
+cat d",,,,,FALSE,"$>
+$>
+$>
+Prout
+$>
+crashtest.c
+Docs
+[...]
+test.c
+$>","0
+0
+0
+0
+0",
+ REDIRECTIONS ,"echo hola > a > b > c
+cat a
+cat b
+cat c",,,,,FALSE,"$>
+$>
+hola
+$>",0,
+ REDIRECTIONS ,"mkdir dir
+ls -la > dir/bonjour
+cat dir/bonjour",,,,,FALSE,"total 16
+drwx------  2 vietdu91 [...] .
+drwxrwxewt 51 root     [...] ..
+[...]
+$> ",0,
+ REDIRECTIONS ,"<a
+cat a",,,,,FALSE,"Amour Tu es Horrible
+$>",0,
+ REDIRECTIONS ,">d cat <a >>e
+cat a
+cat d
+cat e",,,,,FALSE,"$>
+Amour
+$>
+Amour
+$>","0
+0
+0
+0",
+ REDIRECTIONS ,"< a > b cat > hey >> d
+cat d
+ls",,,,,FALSE,"Amour Tu Es Horrible
+$>
+[...] a b hey d","0
+0
+0",
+HEREDOC ⏮️,cat << hola,,,,,FALSE,"> $HOME
+> hola
+/home/vietdu91
+$> ",0,
+HEREDOC ⏮️,cat << 'hola',,,,,FALSE,"> $HOME
+> hola
+$HOME
+$>",0,
+HEREDOC ⏮️,"cat << ""hola""",,,,,FALSE,"> $HOME
+> hola
+$HOME
+$>",0,
+HEREDOC ⏮️,"cat << ho""la""",,,,,FALSE,"> $HOME
+> hola
+$HOME
+$>",0,
+HEREDOC ⏮️,cat << $HOME,,,,,FALSE,"> prout
+> /home/vietdu91
+> $HOME
+/home/vietdu91
+$>",0,
+HEREDOC ⏮️,"cat << hola > bonjour
+cat bonjour",,,,,FALSE,"> prout
+> croutte
+> antoine pue
+> hola
+$>
+prout
+croutte
+antoine pue",0,
+HEREDOC ⏮️,cat << hola | rev,,,,,FALSE,"> prout
+> croutte
+> antoine pue
+> hola
+tuorp
+ettuorc
+eup eniotna
+$>",0,
+HEREDOC ⏮️,<< hola,,,,,FALSE,"> chola
+> holache
+>      hola
+> ""hola""
+> 'hola'
+> hola
+$>",0,
+HEREDOC ⏮️,<<hola,,,,,FALSE,">
+>
+> hola
+$>",0,
+HEREDOC ⏮️,cat <<,,,,,FALSE,"bash: syntax error near unexpected token `newline'
+$>",2,
+HEREDOC ⏮️,cat << prout << lol << koala,,,,,FALSE,"> prout
+> lol
+> koala
+cat
+$>",0,
+HEREDOC ⏮️,prout << lol << cat << koala,,,,,FALSE,"> lol
+> cat
+> koala
+bash: prout: command not found",127,
+HEREDOC ⏮️,<< $hola,,,,,FALSE,"> $hola
+$>",0,
+HEREDOC ⏮️,"<< $""hola""$""b""",,,,,FALSE,"> holab
+$>",0,
+HEREDOC ⏮️,"<< $""$hola""$$""b""",,,,,FALSE,"> $hola$$b
+$>",0,
+HEREDOC ⏮️,"<< ho$la$""$a""$$""b""",,,,,FALSE,"> hola$a$$b
+> ho$la$a$$nb
+$>",0,
+HEREDOC ⏮️,echo hola <<< bonjour,,,,,FALSE,"hola
+$>",0,
+HEREDOC ⏮️,echo hola <<<< bonjour,,,,,FALSE,"bash: syntax error near unexpected token `<'
+$>",2,
+HEREDOC ⏮️,echo hola <<<<< bonjour,,,,,FALSE,"bash: syntax error near unexpected token `<<'
+$>",2,
+WILDCARD ⭐,ls *,NON GERE,,,,FALSE,"crashtest.c  Docs  Dockers  Drawings  Makefile  minishell  philosophers  test.c
+
+Docs:
+identite.pdf  loyer.pdf
+srcs:
+main.c  utils.c  sort.c
+$>",0,[BONUS]
+WILDCARD ⭐,ls *.*,NON GERE,,,,FALSE,"crashtest.c  test.c
+$>",0,[BONUS]
+WILDCARD ⭐,ls *.hola,NON GERE,,,,FALSE,"ls: cannot access '*.hola' : No such file or directory
+$>",2,[BONUS]
+WILDCARD ⭐,cat M*le,NON GERE,,,,FALSE,"[affiche le Makefile]
+$>",0,[BONUS]
+WILDCARD ⭐,cat M*ee,NON GERE,,,,FALSE,cat: 'M*ee': No such file or directory,1,[BONUS]
+WILDCARD ⭐,cat Make*file,NON GERE,,,,FALSE,"[affiche le Makefile]
+$>",0,[BONUS]
