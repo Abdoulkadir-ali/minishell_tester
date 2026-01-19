@@ -1,0 +1,1159 @@
+﻿id;kind;test
+1;CARACTERES A LA VOLEE (SYNTAXE) 🌦;\n
+2;CARACTERES A LA VOLEE (SYNTAXE) 🌦;      
+3;CARACTERES A LA VOLEE (SYNTAXE) 🌦;""""""
+4;CARACTERES A LA VOLEE (SYNTAXE) 🌦;:
+5;CARACTERES A LA VOLEE (SYNTAXE) 🌦;!
+6;CARACTERES A LA VOLEE (SYNTAXE) 🌦;>
+7;CARACTERES A LA VOLEE (SYNTAXE) 🌦;<
+8;CARACTERES A LA VOLEE (SYNTAXE) 🌦;>>
+9;CARACTERES A LA VOLEE (SYNTAXE) 🌦;<<
+10;CARACTERES A LA VOLEE (SYNTAXE) 🌦;<>
+11;CARACTERES A LA VOLEE (SYNTAXE) 🌦;>>>>>
+12;CARACTERES A LA VOLEE (SYNTAXE) 🌦;>>>>>>>>>>>>>>>
+13;CARACTERES A LA VOLEE (SYNTAXE) 🌦;<<<<<
+14;CARACTERES A LA VOLEE (SYNTAXE) 🌦;<<<<<<<<<<<<<<<<
+15;CARACTERES A LA VOLEE (SYNTAXE) 🌦;> > > >
+16;CARACTERES A LA VOLEE (SYNTAXE) 🌦;>> >> >> >>
+17;CARACTERES A LA VOLEE (SYNTAXE) 🌦;>>>> >> >> >>
+18;CARACTERES A LA VOLEE (SYNTAXE) 🌦;/
+19;CARACTERES A LA VOLEE (SYNTAXE) 🌦;//
+20;CARACTERES A LA VOLEE (SYNTAXE) 🌦;/.
+21;CARACTERES A LA VOLEE (SYNTAXE) 🌦;/./../../../../..
+22;CARACTERES A LA VOLEE (SYNTAXE) 🌦;///////
+23;CARACTERES A LA VOLEE (SYNTAXE) 🌦;\\
+24;CARACTERES A LA VOLEE (SYNTAXE) 🌦;\\\\
+25;CARACTERES A LA VOLEE (SYNTAXE) 🌦;\\\\\\\\
+26;CARACTERES A LA VOLEE (SYNTAXE) 🌦;-
+27;CARACTERES A LA VOLEE (SYNTAXE) 🌦;|
+28;CARACTERES A LA VOLEE (SYNTAXE) 🌦;| hola
+29;CARACTERES A LA VOLEE (SYNTAXE) 🌦;| | |
+30;CARACTERES A LA VOLEE (SYNTAXE) 🌦;||
+31;CARACTERES A LA VOLEE (SYNTAXE) 🌦;|||||
+32;CARACTERES A LA VOLEE (SYNTAXE) 🌦;|||||||||||||
+33;CARACTERES A LA VOLEE (SYNTAXE) 🌦;>>|><
+34;CARACTERES A LA VOLEE (SYNTAXE) 🌦;&&
+35;CARACTERES A LA VOLEE (SYNTAXE) 🌦;&&&&&
+36;CARACTERES A LA VOLEE (SYNTAXE) 🌦;&&&&&&&&&&&&&&
+37;CARACTERES A LA VOLEE (SYNTAXE) 🌦;";;"
+38;CARACTERES A LA VOLEE (SYNTAXE) 🌦;";;;;;"
+39;CARACTERES A LA VOLEE (SYNTAXE) 🌦;";;;;;;;;;;;;;;;"
+40;CARACTERES A LA VOLEE (SYNTAXE) 🌦;()
+41;CARACTERES A LA VOLEE (SYNTAXE) 🌦;( ( ) )
+42;CARACTERES A LA VOLEE (SYNTAXE) 🌦;( ( ( ( ) ) ) )
+43;CARACTERES A LA VOLEE (SYNTAXE) 🌦;""""""
+44;CARACTERES A LA VOLEE (SYNTAXE) 🌦;"""hola"""
+45;CARACTERES A LA VOLEE (SYNTAXE) 🌦;'hola'
+46;CARACTERES A LA VOLEE (SYNTAXE) 🌦;''
+47;CARACTERES A LA VOLEE (SYNTAXE) 🌦;*
+48;CARACTERES A LA VOLEE (SYNTAXE) 🌦;*/*
+49;CARACTERES A LA VOLEE (SYNTAXE) 🌦;*/*
+50;CARACTERES A LA VOLEE (SYNTAXE) 🌦;.
+51;CARACTERES A LA VOLEE (SYNTAXE) 🌦;..
+52;CARACTERES A LA VOLEE (SYNTAXE) 🌦;~
+53;CARACTERES A LA VOLEE (SYNTAXE) 🌦;ABC=hola
+54;CARACTERES A LA VOLEE (SYNTAXE) 🌦;4ABC=hola
+55;CARACTERES A LA VOLEE (SYNTAXE) 🌦;hola
+56;CARACTERES A LA VOLEE (SYNTAXE) 🌦;hola que tal
+57;CARACTERES A LA VOLEE (SYNTAXE) 🌦;Makefile
+58;ECHO 🎉;echo
+59;ECHO 🎉;echo -n
+60;ECHO 🎉;echo Hola
+61;ECHO 🎉;echoHola
+62;ECHO 🎉;echo-nHola
+63;ECHO 🎉;echo -n Hola
+64;ECHO 🎉;"echo ""-n"" Hola"
+65;ECHO 🎉;echo -nHola
+66;ECHO 🎉;echo Hola -n
+67;ECHO 🎉;echo Hola Que Tal
+68;ECHO 🎉;echo Hola
+69;ECHO 🎉;echo Hola Que Tal
+70;ECHO 🎉;echo \n hola
+71;ECHO 🎉;"echo "" "" | cat -e"
+72;ECHO 🎉;echo | cat -e
+73;ECHO 🎉;"""""''echo hola""""'''' que""""'' tal""""''"
+74;ECHO 🎉;echo -n -n
+75;ECHO 🎉;echo -n -n Hola Que
+76;ECHO 🎉;echo -p
+77;ECHO 🎉;echo -nnnnn
+78;ECHO 🎉;echo -n -nnn -nnnn
+79;ECHO 🎉;echo -n-nnn -nnnn
+80;ECHO 🎉;echo -n -nnn hola -nnnn
+81;ECHO 🎉;echo -n -nnn-nnnn
+82;ECHO 🎉;echo --------n
+83;ECHO 🎉;echo -nnn --------n
+84;ECHO 🎉;echo -nnn -----nn---nnnn
+85;ECHO 🎉;echo -nnn --------nnnn
+86;ECHO 🎉;echo $
+87;ECHO 🎉;echo $?
+88;ECHO 🎉;echo $?$
+89;ECHO 🎉;echo $? | echo $? | echo $?
+90;ECHO 🎉;echo $:$= | cat -e
+91;ECHO 🎉;"echo "" $ "" | cat -e"
+92;ECHO 🎉;echo ' $ ' | cat -e
+93;ECHO 🎉;echo $HOME
+94;ECHO 🎉;echo \$HOME
+95;ECHO 🎉;echo my shit terminal is [$TERM]
+96;ECHO 🎉;echo my shit terminal is [$TERM4
+97;ECHO 🎉;echo my shit terminal is [$TERM4]
+98;ECHO 🎉;echo $UID
+99;ECHO 🎉;echo $HOME9
+100;ECHO 🎉;echo $9HOME
+101;ECHO 🎉;echo $HOME%
+102;ECHO 🎉;echo $UID$HOME
+103;ECHO 🎉;echo Le path de mon HOME est $HOME
+104;ECHO 🎉;echo $USER$var\$USER$USER\$USERtest$USER
+105;ECHO 🎉;echo $hola*
+106;ECHO 🎉;echo -nnnn $hola
+107;ECHO 🎉;echo > <
+108;ECHO 🎉;echo | |
+109;ECHO 🎉;EechoE
+110;ECHO 🎉;.echo.
+111;ECHO 🎉;>echo>
+112;ECHO 🎉;<echo<
+113;ECHO 🎉;>>echo>>
+114;ECHO 🎉;|echo|
+115;ECHO 🎉;|echo -n hola
+116;ECHO 🎉;echo *
+117;ECHO 🎉;echo '*'
+118;ECHO 🎉;echo D*
+119;ECHO 🎉;echo *Z
+120;ECHO 🎉;echo *t hola
+121;ECHO 🎉;echo *t
+122;ECHO 🎉;echo $*
+123;ECHO 🎉;echo hola*hola *
+124;ECHO 🎉;echo $hola*
+125;ECHO 🎉;echo $HOME*
+126;ECHO 🎉;"echo $"""""
+127;ECHO 🎉;"echo ""$"""""""
+128;ECHO 🎉;echo '$'''
+129;ECHO 🎉;"echo $""HOME"""
+130;ECHO 🎉;echo $''HOME
+131;ECHO 🎉;"echo $""""HOME"
+132;ECHO 🎉;"echo ""$HO""ME"
+133;ECHO 🎉;echo '$HO'ME
+134;ECHO 🎉;"echo ""$HO""""ME"""
+135;ECHO 🎉;echo '$HO''ME'
+136;ECHO 🎉;"echo ""'$HO''ME'"""
+137;ECHO 🎉;"echo """"$HOME"
+138;ECHO 🎉;"echo """" $HOME"
+139;ECHO 🎉;echo ''$HOME
+140;ECHO 🎉;echo '' $HOME
+141;ECHO 🎉;"echo $""HO""""ME"""
+142;ECHO 🎉;echo $'HO''ME'
+143;ECHO 🎉;echo $'HOME'
+144;ECHO 🎉;"echo ""$""HOME"
+145;ECHO 🎉;echo $=HOME
+146;ECHO 🎉;"echo $""HOLA"""
+147;ECHO 🎉;echo $'HOLA'
+148;ECHO 🎉;echo $DONTEXIST Hola
+149;ECHO 🎉;"echo ""hola"""
+150;ECHO 🎉;echo 'hola'
+151;ECHO 🎉;echo ''hola''
+152;ECHO 🎉;echo ''h'o'la''
+153;ECHO 🎉;"echo ""''h'o'la''"""
+154;ECHO 🎉;"echo ""'""h'o'la""'"""
+155;ECHO 🎉;"echo""'hola'"""
+156;ECHO 🎉;"echo ""'hola'"""
+157;ECHO 🎉;"echo '""hola""'"
+158;ECHO 🎉;"echo '''ho""''''l""a'''"
+159;ECHO 🎉;"echo hola"""""""""""""""""""""""""
+160;ECHO 🎉;"echo hola""''''''''''"""
+161;ECHO 🎉;echo hola''''''''''''
+162;ECHO 🎉;"echo hola'""""""""""""""""""""'"
+163;ECHO 🎉;"e""cho hola"""
+164;ECHO 🎉;e'cho hola'
+165;ECHO 🎉;"echo ""hola "" | cat -e"
+166;ECHO 🎉;"echo """"hola"
+167;ECHO 🎉;"echo """" hola"
+168;ECHO 🎉;"echo """" hola"
+169;ECHO 🎉;"echo """"hola"
+170;ECHO 🎉;"echo """" hola"
+171;ECHO 🎉;"echo hola""""bonjour"
+172;ECHO 🎉;"""e""'c'ho 'b'""o""nj""o""'u'r"
+173;ECHO 🎉;"""""e""'c'ho 'b'""o""nj""o""'u'r"""
+174;ECHO 🎉;"echo ""$DONTEXIST""Makefile"
+175;ECHO 🎉;"echo ""$DONTEXIST""""Makefile"""
+176;ECHO 🎉;"echo ""$DONTEXIST"" ""Makefile"""
+177;💰;$?
+178;💰;$?$?
+179;💰;?$HOME
+180;💰;$
+181;💰;$HOME
+182;💰;$HOMEdskjhfkdshfsd
+183;💰;"""$HOMEdskjhfkdshfsd"""
+184;💰;'$HOMEdskjhfkdshfsd'
+185;💰;$DONTEXIST
+186;💰;$LESS$VAR
+187;SIGNAUX 🛰;Ctlr-C
+188;SIGNAUX 🛰;holaCtlr-C
+189;SIGNAUX 🛰;cat (faire Ctlr-C apres avoir fait plusieurs fois [ENTREE])
+190;SIGNAUX 🛰;cat | rev(faire Ctlr-C apres avoir fait plusieurs fois [ENTREE])
+191;SIGNAUX 🛰;Ctlr-D
+192;SIGNAUX 🛰;hola Ctlr-D
+193;SIGNAUX 🛰;Ctlr-\
+194;SIGNAUX 🛰;hola Ctlr-\
+195;SIGNAUX 🛰;cat (faire Ctlr-\ apres avoir fait plusieurs fois [ENTREE])
+196;SIGNAUX 🛰;Ctlr-Z
+197;SIGNAUX 🛰;sleep 3 | sleep 3 | sleep 3 (faire Ctlr-C une seconde apres)
+198;SIGNAUX 🛰;sleep 3 | sleep 3 | sleep 3 (faire Ctlr-D une seconde apres)
+199;SIGNAUX 🛰;sleep 3 | sleep 3 | sleep 3 (faire Ctlr-\ une seconde apres)
+200;🛫 ENV & EXPORT & UNSET 🛬;env
+201;🛫 ENV & EXPORT & UNSET 🛬;env hola
+202;🛫 ENV & EXPORT & UNSET 🛬;env hola que tal
+203;🛫 ENV & EXPORT & UNSET 🛬;env env
+204;🛫 ENV & EXPORT & UNSET 🛬;env env env env env
+205;🛫 ENV & EXPORT & UNSET 🛬;env ls
+206;🛫 ENV & EXPORT & UNSET 🛬;env ./Makefile
+207;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=bonjour
+env"
+208;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=bonjour
+env"
+209;🛫 ENV & EXPORT & UNSET 🛬;export
+210;🛫 ENV & EXPORT & UNSET 🛬;"export Hola
+export"
+211;🛫 ENV & EXPORT & UNSET 🛬;"export Hola9hey
+export"
+212;🛫 ENV & EXPORT & UNSET 🛬;export $DONTEXIST
+213;🛫 ENV & EXPORT & UNSET 🛬;"export | grep ""HOME"""
+214;🛫 ENV & EXPORT & UNSET 🛬;"export """""
+215;🛫 ENV & EXPORT & UNSET 🛬;export =
+216;🛫 ENV & EXPORT & UNSET 🛬;export %
+217;🛫 ENV & EXPORT & UNSET 🛬;export $?
+218;🛫 ENV & EXPORT & UNSET 🛬;export ?=2
+219;🛫 ENV & EXPORT & UNSET 🛬;export 9HOLA=
+220;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA9=bonjour
+env"
+221;🛫 ENV & EXPORT & UNSET 🛬;"export _HOLA=bonjour
+env"
+222;🛫 ENV & EXPORT & UNSET 🛬;"export ___HOLA=bonjour
+env"
+223;🛫 ENV & EXPORT & UNSET 🛬;"export _HO_LA_=bonjour
+env"
+224;🛫 ENV & EXPORT & UNSET 🛬;export HOL@=bonjour
+225;🛫 ENV & EXPORT & UNSET 🛬;export HOL\~A=bonjour
+226;🛫 ENV & EXPORT & UNSET 🛬;export -HOLA=bonjour
+227;🛫 ENV & EXPORT & UNSET 🛬;export --HOLA=bonjour
+228;🛫 ENV & EXPORT & UNSET 🛬;export HOLA-=bonjour
+229;🛫 ENV & EXPORT & UNSET 🛬;export HO-LA=bonjour
+230;🛫 ENV & EXPORT & UNSET 🛬;export HOL.A=bonjour
+231;🛫 ENV & EXPORT & UNSET 🛬;export HOL\\\$A=bonjour
+232;🛫 ENV & EXPORT & UNSET 🛬;export HO\\\\LA=bonjour
+233;🛫 ENV & EXPORT & UNSET 🛬;export HOL}A=bonjour
+234;🛫 ENV & EXPORT & UNSET 🛬;export HOL{A=bonjour
+235;🛫 ENV & EXPORT & UNSET 🛬;export HO*LA=bonjour
+236;🛫 ENV & EXPORT & UNSET 🛬;export HO#LA=bonjour
+237;🛫 ENV & EXPORT & UNSET 🛬;export HO@LA=bonjour
+238;🛫 ENV & EXPORT & UNSET 🛬;export HO!LA=bonjour
+239;🛫 ENV & EXPORT & UNSET 🛬;"export HO$?LA=bonjour
+env"
+240;🛫 ENV & EXPORT & UNSET 🛬;export +HOLA=bonjour
+241;🛫 ENV & EXPORT & UNSET 🛬;export HOL+A=bonjour
+242;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA+=bonjour
+env"
+243;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=bonjour
+export HOLA+=bonjour
+env"
+244;🛫 ENV & EXPORT & UNSET 🛬;"exportHOLA=bonjour
+env"
+245;🛫 ENV & EXPORT & UNSET 🛬;export HOLA =bonjour
+246;🛫 ENV & EXPORT & UNSET 🛬;export HOLA = bonjour
+247;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=bon jour
+env"
+248;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA= bonjour
+env"
+249;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=bonsoir
+export HOLA=bonretour
+export HOLA=bonjour
+env"
+250;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=$HOME
+env"
+251;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=bonjour$HOME
+env"
+252;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=$HOMEbonjour
+env"
+253;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=bon$jour
+env"
+254;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=bon\jour
+env"
+255;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=bon\\jour
+env"
+256;🛫 ENV & EXPORT & UNSET 🛬;export HOLA=bon(jour
+257;🛫 ENV & EXPORT & UNSET 🛬;export HOLA=bon()jour
+258;🛫 ENV & EXPORT & UNSET 🛬;export HOLA=bon&jour
+259;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=bon@jour
+env"
+260;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=bon;jour
+env"
+261;🛫 ENV & EXPORT & UNSET 🛬;export HOLA=bon!jour
+262;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=bon""jour""
+env"
+263;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA$USER=bonjour
+env"
+264;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=bonjour=casse-toi
+echo $HOLA"
+265;🛫 ENV & EXPORT & UNSET 🛬;"export ""HOLA=bonjour""=casse-toi
+echo $HOLA"
+266;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=bonjour
+export BYE=casse-toi
+echo $HOLA et $BYE"
+267;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=bonjour BYE=casse-toi
+echo $HOLA et $BYE"
+268;🛫 ENV & EXPORT & UNSET 🛬;"export $HOLA=bonjour
+env"
+269;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=""bonjour "" 
+echo $HOLA | cat -e"
+270;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA="" -n bonjour "" 
+echo $HOLA"
+271;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=""bonjour ""/
+echo $HOLA"
+272;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA='""'
+echo "" $HOLA "" | cat -e"
+273;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=at
+c$HOLA Makefile"
+274;🛫 ENV & EXPORT & UNSET 🛬;"export """" HOLA=bonjour
+env"
+275;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=""cat Makefile | grep NAME"" 
+echo $HOLA"
+276;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=hey 
+echo $HOLA$HOLA$HOLA=hey$HOLA"
+277;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA="" bonjour hey "" 
+echo $HOLA | cat -e"
+278;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA="" bonjour hey "" 
+echo """"""$HOLA"""""" | cat -e"
+279;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA="" bonjour hey "" 
+echo wesh""$HOLA"" | cat -e"
+280;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA="" bonjour hey "" 
+echo wesh""""$HOLA."
+281;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA="" bonjour hey "" 
+echo wesh$""""HOLA."
+282;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA="" bonjour hey "" 
+echo wesh$""HOLA HOLA""."
+283;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=bonjour
+export HOLA="" hola et $HOLA""
+echo $HOLA"
+284;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=bonjour
+export HOLA=' hola et $HOLA'
+echo $HOLA"
+285;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=bonjour
+export HOLA="" hola et $HOLA""$HOLA
+echo $HOLA"
+286;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=""ls -l - a""
+echo $HOLA"
+287;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=""s -la"" 
+l$HOLA"
+288;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=""s -la"" 
+l""$HOLA"""
+289;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=""s -la"" 
+l'$HOLA'"
+290;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=""l"" 
+$HOLAs"
+291;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=""l"" 
+""$HOLA""s"
+292;🛫 ENV & EXPORT & UNSET 🛬;"export HOL=A=bonjour
+env"
+293;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=""l"" 
+'$HOLA's"
+294;🛫 ENV & EXPORT & UNSET 🛬;"export HOL=A=""""
+env"
+295;🛫 ENV & EXPORT & UNSET 🛬;"export TE+S=T
+env"
+296;🛫 ENV & EXPORT & UNSET 🛬;"export """"="""""
+297;🛫 ENV & EXPORT & UNSET 🛬;export ''=''
+298;🛫 ENV & EXPORT & UNSET 🛬;"export ""=""=""="""
+299;🛫 ENV & EXPORT & UNSET 🛬;export '='='='
+300;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=p
+export BYE=w
+$HOLA""BYE""d"
+301;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=p
+export BYE=w
+""$HOLA""'$BYE'd"
+302;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=p
+export BYE=w
+""$HOLA""""$BYE""d"
+303;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=p
+export BYE=w
+$""HOLA""$""BYE""d"
+304;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=p
+export BYE=w
+$'HOLA'$'BYE'd"
+305;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=-n
+""echo $HOLA"" hey"
+306;🛫 ENV & EXPORT & UNSET 🛬;"export A=1 B=2 C=3 D=4 E=5 F=6 G=7 H=8
+echo ""$A'$B""'$C""$D'$E'""$F'""'$G'$H"""
+307;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=bonjour
+env
+unset HOLA
+env"
+308;🛫 ENV & EXPORT & UNSET 🛬;"export HOLA=bonjour
+env
+unset HOLA
+unset HOLA
+env"
+309;🛫 ENV & EXPORT & UNSET 🛬;"unset PATH
+echo $PATH"
+310;🛫 ENV & EXPORT & UNSET 🛬;"unset PATH
+ls"
+311;🛫 ENV & EXPORT & UNSET 🛬;"unset """""
+312;🛫 ENV & EXPORT & UNSET 🛬;unset INEXISTANT
+313;🛫 ENV & EXPORT & UNSET 🛬;"unset PWD
+env | grep PWD
+pwd"
+314;🛫 ENV & EXPORT & UNSET 🛬;"pwd
+unset PWD
+env | grep PWD
+cd $PWD
+pwd"
+315;🛫 ENV & EXPORT & UNSET 🛬;"unset OLDPWD
+env | grep OLDPWD"
+316;🛫 ENV & EXPORT & UNSET 🛬;unset 9HOLA
+317;🛫 ENV & EXPORT & UNSET 🛬;unset HOLA9
+318;🛫 ENV & EXPORT & UNSET 🛬;unset HOL?A
+319;🛫 ENV & EXPORT & UNSET 🛬;unset HOLA HOL?A
+320;🛫 ENV & EXPORT & UNSET 🛬;unset HOL?A HOLA
+321;🛫 ENV & EXPORT & UNSET 🛬;unset HOL?A HOL.A
+322;🛫 ENV & EXPORT & UNSET 🛬;unset HOLA=
+323;🛫 ENV & EXPORT & UNSET 🛬;unset HOL\\\\A
+324;🛫 ENV & EXPORT & UNSET 🛬;"unset HOL;A"
+325;🛫 ENV & EXPORT & UNSET 🛬;unset HOL.A
+326;🛫 ENV & EXPORT & UNSET 🛬;unset HOL+A
+327;🛫 ENV & EXPORT & UNSET 🛬;unset HOL=A
+328;🛫 ENV & EXPORT & UNSET 🛬;unset HOL{A
+329;🛫 ENV & EXPORT & UNSET 🛬;unset HOL}A
+330;🛫 ENV & EXPORT & UNSET 🛬;unset HOL-A
+331;🛫 ENV & EXPORT & UNSET 🛬;unset -HOLA
+332;🛫 ENV & EXPORT & UNSET 🛬;unset _HOLA
+333;🛫 ENV & EXPORT & UNSET 🛬;unset HOL_A
+334;🛫 ENV & EXPORT & UNSET 🛬;unset HOLA_
+335;🛫 ENV & EXPORT & UNSET 🛬;unset HOL*A
+336;🛫 ENV & EXPORT & UNSET 🛬;unset HOL#A
+337;🛫 ENV & EXPORT & UNSET 🛬;unset $HOLA
+338;🛫 ENV & EXPORT & UNSET 🛬;unset $PWD
+339;🛫 ENV & EXPORT & UNSET 🛬;unset HOL@
+340;🛫 ENV & EXPORT & UNSET 🛬;unset HOL!A
+341;🛫 ENV & EXPORT & UNSET 🛬;unset HOL^A
+342;🛫 ENV & EXPORT & UNSET 🛬;unset HOL$?A
+343;🛫 ENV & EXPORT & UNSET 🛬;unset HOL\~A
+344;🛫 ENV & EXPORT & UNSET 🛬;"unset """" HOLA
+env | grep HOLA"
+345;🛫 ENV & EXPORT & UNSET 🛬;"unset PATH
+echo $PATH"
+346;🛫 ENV & EXPORT & UNSET 🛬;"unset PATH
+cat Makefile"
+347;🛫 ENV & EXPORT & UNSET 🛬;unset =
+348;🛫 ENV & EXPORT & UNSET 🛬;unset ======
+349;🛫 ENV & EXPORT & UNSET 🛬;unset ++++++
+350;🛫 ENV & EXPORT & UNSET 🛬;unset _______
+351;🛫 ENV & EXPORT & UNSET 🛬;unset export
+352;🛫 ENV & EXPORT & UNSET 🛬;unset echo
+353;🛫 ENV & EXPORT & UNSET 🛬;unset pwd
+354;🛫 ENV & EXPORT & UNSET 🛬;unset cd
+355;🛫 ENV & EXPORT & UNSET 🛬;unset unset
+356;🛫 ENV & EXPORT & UNSET 🛬;unset sudo
+357;🛫 ENV & EXPORT & UNSET 🛬;export hola | unset hola | echo $?
+358;FICHIERS BINAIRES 0️⃣ 1️⃣;/bin/echo
+359;FICHIERS BINAIRES 0️⃣ 1️⃣;/bin/echo Hola Que Tal
+360;FICHIERS BINAIRES 0️⃣ 1️⃣;/bin/env
+361;FICHIERS BINAIRES 0️⃣ 1️⃣;/bin/cd Desktop
+362;HISTORIQUE 🏦;history
+363;HISTORIQUE 🏦;[touche du haut]
+364;CD 💿 PWD;pwd
+365;CD 💿 PWD;pwd hola
+366;CD 💿 PWD;pwd ./hola
+367;CD 💿 PWD;pwd hola que tal
+368;CD 💿 PWD;pwd -p
+369;CD 💿 PWD;pwd --p
+370;CD 💿 PWD;pwd ---p
+371;CD 💿 PWD;pwd -- p
+372;CD 💿 PWD;pwd pwd pwd
+373;CD 💿 PWD;pwd ls
+374;CD 💿 PWD;pwd ls env
+375;CD 💿 PWD;cd
+376;CD 💿 PWD;cd .
+377;CD 💿 PWD;cd ./
+378;CD 💿 PWD;cd ./././.
+379;CD 💿 PWD;cd ././././
+380;CD 💿 PWD;cd ..
+381;CD 💿 PWD;cd ../
+382;CD 💿 PWD;cd ../..
+383;CD 💿 PWD;cd ../.
+384;CD 💿 PWD;cd .././././.
+385;CD 💿 PWD;cd srcs
+386;CD 💿 PWD;cd srcs objs
+387;CD 💿 PWD;cd 'srcs'
+388;CD 💿 PWD;"cd ""srcs"""
+389;CD 💿 PWD;cd '/etc'
+390;CD 💿 PWD;cd /e'tc'
+391;CD 💿 PWD;"cd /e""tc"""
+392;CD 💿 PWD;cd sr
+393;CD 💿 PWD;cd Makefile
+394;CD 💿 PWD;cd ../minishell
+395;CD 💿 PWD;cd ../../../../../../..
+396;CD 💿 PWD;cd .././../.././../bin/ls
+397;CD 💿 PWD;cd /
+398;CD 💿 PWD;cd '/'
+399;CD 💿 PWD;"cd //
+pwd"
+400;CD 💿 PWD;"cd '//'
+pwd"
+401;CD 💿 PWD;"cd ///
+pwd"
+402;CD 💿 PWD;"cd ////////
+pwd"
+403;CD 💿 PWD;"cd '////////'
+pwd"
+404;CD 💿 PWD;cd /minishell
+405;CD 💿 PWD;"cd /
+cd .."
+406;CD 💿 PWD;cd _
+407;CD 💿 PWD;cd -
+408;CD 💿 PWD;cd --
+409;CD 💿 PWD;cd ---
+410;CD 💿 PWD;cd $HOME
+411;CD 💿 PWD;cd $HOME $HOME
+412;CD 💿 PWD;cd $HOME/42_works
+413;CD 💿 PWD;"cd ""$PWD/srcs"""
+414;CD 💿 PWD;cd '$PWD/srcs'
+415;CD 💿 PWD;"unset HOME
+cd $HOME"
+416;CD 💿 PWD;"unset HOME
+export HOME=
+cd"
+417;CD 💿 PWD;"unset HOME
+export HOME
+cd"
+418;CD 💿 PWD;cd minishell Docs crashtest.c
+419;CD 💿 PWD;"cd / | echo $?
+pwd"
+420;CD 💿 PWD;cd ~
+421;CD 💿 PWD;cd ~/
+422;CD 💿 PWD;"cd ~/ | echo $?
+pwd"
+423;CD 💿 PWD;cd *
+424;CD 💿 PWD;cd *
+425;CD 💿 PWD;cd *
+426;CD 💿 PWD;"mkdir a
+mkdir a/b
+cd a/b
+rm -r ../../a
+cd .."
+427;CD 💿 PWD;"mkdir a
+mkdir a/b
+cd a/b
+rm -r ../../a
+pwd"
+428;CD 💿 PWD;"mkdir a
+mkdir a/b
+cd a/b
+rm -r ../../a
+echo $PWD
+echo $OLDPWD"
+429;CD 💿 PWD;"mkdir a
+mkdir a/b
+cd a/b
+rm -r ../../a
+cd
+echo $PWD
+echo $OLDPWD"
+430;CD 💿 PWD;"mkdir a
+cd a
+rm -r ../a
+echo $PWD
+echo $OLDPWD"
+431;CD 💿 PWD;"export CDPATH=/
+cd $HOME/.."
+432;CD 💿 PWD;"export CDPATH=/
+cd home/vietdu91"
+433;CD 💿 PWD;"export CDPATH=./
+cd ."
+434;CD 💿 PWD;"export CDPATH=./
+cd .."
+435;BÂTARDS 🖕;"chmod 000 minishell
+./minishell"
+436;BÂTARDS 🖕;ls hola
+437;BÂTARDS 🖕;./Makefile
+438;BÂTARDS 🖕;./minishell
+439;BÂTARDS 🖕;"env | grep SHLVL
+./minishell
+env | grep SHLVL
+exit
+env | grep SHLVL"
+440;BÂTARDS 🖕;"touch hola
+./hola"
+441;BÂTARDS 🖕;"env|""wc"" -l"
+442;BÂTARDS 🖕;"env|""wc ""-l"
+443;BÂTARDS 🖕;expr 1 + 1
+444;BÂTARDS 🖕;expr $? + $?
+445;BÂTARDS 🖕;"env -i ./minishell
+env"
+446;BÂTARDS 🖕;"env -i ./minishell
+export"
+447;BÂTARDS 🖕;"env -i ./minishell
+cd"
+448;BÂTARDS 🖕;"env -i ./minishell
+cd ~"
+449;EXIT ⛔;exit
+450;EXIT ⛔;exit exit
+451;EXIT ⛔;exit hola
+452;EXIT ⛔;exit hola que tal
+453;EXIT ⛔;exit 42
+454;EXIT ⛔;exit 000042
+455;EXIT ⛔;exit 666
+456;EXIT ⛔;exit 666 666
+457;EXIT ⛔;exit -666 666
+458;EXIT ⛔;exit hola 666
+459;EXIT ⛔;exit 666 666 666 666
+460;EXIT ⛔;exit 666 hola 666
+461;EXIT ⛔;exit hola 666 666
+462;EXIT ⛔;exit 259
+463;EXIT ⛔;exit -4
+464;EXIT ⛔;exit -42
+465;EXIT ⛔;exit -0000042
+466;EXIT ⛔;exit -259
+467;EXIT ⛔;exit -666
+468;EXIT ⛔;exit +666
+469;EXIT ⛔;exit 0
+470;EXIT ⛔;exit +0
+471;EXIT ⛔;exit -0
+472;EXIT ⛔;exit +42
+473;EXIT ⛔;exit -69 -96
+474;EXIT ⛔;exit --666
+475;EXIT ⛔;exit ++++666
+476;EXIT ⛔;exit ++++++0
+477;EXIT ⛔;exit ------0
+478;EXIT ⛔;"exit ""666"""
+479;EXIT ⛔;exit '666'
+480;EXIT ⛔;exit '-666'
+481;EXIT ⛔;exit '+666'
+482;EXIT ⛔;exit '----666'
+483;EXIT ⛔;exit '++++666'
+484;EXIT ⛔;exit '6'66
+485;EXIT ⛔;exit '2'66'32'
+486;EXIT ⛔;"exit ""'666'"""
+487;EXIT ⛔;"exit '""666""'"
+488;EXIT ⛔;"exit '666'""666""666"
+489;EXIT ⛔;"exit +'666'""666""666"
+490;EXIT ⛔;"exit -'666'""666""666"
+491;EXIT ⛔;exit 9223372036854775807
+492;EXIT ⛔;exit 9223372036854775808
+493;EXIT ⛔;exit -9223372036854775808
+494;EXIT ⛔;exit -9223372036854775809
+495;PIPES 🚬;cat | cat | cat | ls
+496;PIPES 🚬;ls | exit
+497;PIPES 🚬;ls | exit 42
+498;PIPES 🚬;exit | ls
+499;PIPES 🚬;"echo hola > bonjour
+exit | cat -e bonjour"
+500;PIPES 🚬;"echo hola > bonjour
+cat -e bonjour | exit"
+501;PIPES 🚬;echo | echo
+502;PIPES 🚬;echo hola | echo que tal
+503;PIPES 🚬;pwd | echo hola
+504;PIPES 🚬;env | echo hola
+505;PIPES 🚬;echo oui | cat -e
+506;PIPES 🚬;echo oui | echo non | echo hola | grep oui
+507;PIPES 🚬;echo oui | echo non | echo hola | grep non
+508;PIPES 🚬;echo oui | echo non | echo hola | grep hola
+509;PIPES 🚬;echo hola | cat -e | cat -e | cat -e
+510;PIPES 🚬;"cd .. | echo ""hola"""
+511;PIPES 🚬;"cd / | echo ""hola"""
+512;PIPES 🚬;cd .. | pwd
+513;PIPES 🚬;"ifconfig | grep "":"""
+514;PIPES 🚬;ifconfig | grep hola
+515;PIPES 🚬;whoami | grep $USER
+516;PIPES 🚬;"whoami | grep $USER > /tmp/bonjour
+cat /tmp/bonjour"
+517;PIPES 🚬;"whoami | cat -e | cat -e > /tmp/bonjour
+cat /tmp/bonjour"
+518;PIPES 🚬;"whereis ls | cat -e | cat -e > /tmp/bonjour
+cat /tmp/bonjour"
+519;PIPES 🚬;ls | hola
+520;PIPES 🚬;ls | ls hola
+521;PIPES 🚬;ls | ls | hola
+522;PIPES 🚬;ls | hola | ls
+523;PIPES 🚬;ls | ls | hola | rev
+524;PIPES 🚬;ls | ls | echo hola | rev
+525;PIPES 🚬;"ls -la | grep ""."""
+526;PIPES 🚬;"ls -la | grep ""'.'"""
+527;PIPES 🚬;echo test.c | cat -e| cat -e| cat -e| cat -e| cat -e| cat -e| cat -e| cat -e|cat -e|cat -e|cat -e
+528;PIPES 🚬;"ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls
+|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls"
+529;PIPES 🚬;echo hola | cat | cat | cat | cat | cat | grep hola
+530;PIPES 🚬;echo hola | cat
+531;PIPES 🚬;echo hola| cat
+532;PIPES 🚬;echo hola |cat
+533;PIPES 🚬;echo hola|cat
+534;PIPES 🚬;echo hola || cat
+535;PIPES 🚬;echo hola ||| cat
+536;PIPES 🚬;ech|o hola | cat
+537;PIPES 🚬;cat Makefile | cat -e | cat -e
+538;PIPES 🚬;cat Makefile | grep srcs | cat -e
+539;PIPES 🚬;cat Makefile | grep srcs | grep srcs | cat -e
+540;PIPES 🚬;cat Makefile | grep pr | head -n 5 | cd file_not_exist
+541;PIPES 🚬;cat Makefile | grep pr | head -n 5 | hello
+542;PIPES 🚬;export HOLA=bonjour | cat -e | cat -e
+543;PIPES 🚬;unset HOLA | cat -e
+544;PIPES 🚬;"export HOLA | echo hola
+env | grep PROUT"
+545;PIPES 🚬;export | echo hola
+546;PIPES 🚬;sleep 3 | sleep 3
+547;PIPES 🚬;time sleep 3 | sleep 3
+548;PIPES 🚬;sleep 3 | exit
+549;PIPES 🚬;exit | sleep 3
+550;PIPES 🚬;"echo hola > a
+>>b echo que tal
+cat a | <b cat | cat > c | cat"
+551;&& 🍒 ||;pwd && ls
+552;&& 🍒 ||;pwd || ls
+553;&& 🍒 ||;echo hola || echo bonjour
+554;&& 🍒 ||;echo hola && echo bonjour
+555;&& 🍒 ||;echo bonjour || echo hola
+556;&& 🍒 ||;echo bonjour && echo hola
+557;&& 🍒 ||;echo -n bonjour && echo -n hola
+558;&& 🍒 ||;pwd && ls && echo hola
+559;&& 🍒 ||;pwd || ls && echo hola
+560;&& 🍒 ||;pwd && ls || echo hola
+561;&& 🍒 ||;pwd || ls || echo hola
+562;&& 🍒 ||;"ls || export """""
+563;&& 🍒 ||;"export """" || ls"
+564;&& 🍒 ||;"ls && export """""
+565;&& 🍒 ||;"export """" && ls"
+566;&& 🍒 ||;"ls || ;"
+567;&& 🍒 ||;"; || ls"
+568;&& 🍒 ||;"ls && ;"
+569;&& 🍒 ||;"; && ls"
+570;&& 🍒 ||;ls || <
+571;&& 🍒 ||;ls && <
+572;&& 🍒 ||;cat | echo || ls
+573;&& 🍒 ||;cat | echo && ls
+574;&& 🍒 ||;ls || cat | echo
+575;&& 🍒 ||;ls && cat | echo
+576;&& 🍒 ||;"export """" && unset """""
+577;( PARENTHESES );(ls)
+578;( PARENTHESES );( ( ls ) )
+579;( PARENTHESES );( ( ) ls )
+580;( PARENTHESES );ls && (ls)
+581;( PARENTHESES );(ls && pwd)
+582;( PARENTHESES );( ( ls&&pwd ) )
+583;( PARENTHESES );( ( ls ) &&pwd )
+584;( PARENTHESES );(ls && ( ( pwd ) ) )
+585;( PARENTHESES );"(ls && pwd) > hola
+cat hola"
+586;( PARENTHESES );> hola ls && pwd
+587;( PARENTHESES );> hola (ls && pwd)
+588;( PARENTHESES );"(> pwd)
+ls"
+589;( PARENTHESES );"(< pwd)
+ls"
+590;( PARENTHESES );(< pwd)
+591;( PARENTHESES );( ( ( ( ( pwd) ) ) ) )
+592;( PARENTHESES );() pwd
+593;( PARENTHESES );> pwd (ls)
+594;( PARENTHESES );(ls||pwd)&&(ls||pwd)
+595;( PARENTHESES );(lss||pwd)&&(lss||pwd)
+596;( PARENTHESES );(lss&&pwd)&&(lss&&pwd)
+597;( PARENTHESES );"(ls && pwd | wc) > hola
+cat hola"
+598;( PARENTHESES );"(ls && pwd | wc) > hola
+(ls && pwd | wc) > hola
+cat hola"
+599;( PARENTHESES );"(ls && pwd | wc) >> hola
+echo hey&&(ls && pwd | wc) > hola
+cat hola"
+600;( PARENTHESES );(pwd | wc) < hola
+601;( PARENTHESES );(ls && pwd | wc) < hola
+602;( PARENTHESES );(ls -z || pwd | wc) < hola
+603;( PARENTHESES );"echo hey > hola
+(pwd | wc) < hola"
+604;( PARENTHESES );"echo hey > hola
+(ls && pwd | wc) < hola"
+605;( PARENTHESES );"echo hey > hola
+(ls -z || pwd | wc) < hola"
+606;( PARENTHESES );(ls -z || pwd && ls)
+607;( PARENTHESES );ls || (cat Makefile|grep srcs) && (pwd|wc)
+608;( PARENTHESES );ls -z && (ls) && (pwd)
+609;( PARENTHESES );"(ls > Docs/hey && pwd) > hola
+cat hola
+cat Docs/hey"
+610;( PARENTHESES );"ls > Docs/hey && pwd > hola
+cat hola
+cat Docs/hey"
+611;( PARENTHESES );cd ../.. && pwd && pwd
+612;( PARENTHESES );(cd ../.. && pwd) && pwd
+613;( PARENTHESES );"ls -z || cd ../../..&&pwd
+pwd"
+614;( PARENTHESES );"ls -z || (cd ../../..&&pwd)
+pwd"
+615;REDIRECTIONS;"echo hola > bonjour
+cat bonjour"
+616;REDIRECTIONS;"echo que tal >> bonjour
+cat bonjour"
+617;REDIRECTIONS;"echo hola > bonjour
+echo que tal >> bonjour
+cat < bonjour"
+618;REDIRECTIONS;"echo hola > bonjour
+rm bonjour
+echo que tal >> bonjour
+cat < bonjour"
+619;REDIRECTIONS;"echo hola que tal > bonjour
+cat bonjour"
+620;REDIRECTIONS;"echo hola que tal > /tmp/bonjour
+cat -e /tmp/bonjour"
+621;REDIRECTIONS;"export HOLA=hey
+echo bonjour > $HOLA
+echo $HOLA"
+622;REDIRECTIONS;"whereis grep > Docs/bonjour
+cat Docs/bonjour"
+623;REDIRECTIONS;"ls -la > Docs/bonjour
+cat Docs/bonjour"
+624;REDIRECTIONS;"pwd>bonjour
+cat bonjour"
+625;REDIRECTIONS;"pwd > bonjour
+cat bonjour"
+626;REDIRECTIONS;echo hola > > bonjour
+627;REDIRECTIONS;echo hola < < bonjour
+628;REDIRECTIONS;echo hola >>> bonjour
+629;REDIRECTIONS;"> bonjour echo hola
+cat bonjour"
+630;REDIRECTIONS;"> bonjour | echo hola
+cat bonjour"
+631;REDIRECTIONS;"prout hola > bonjour
+ls"
+632;REDIRECTIONS;"echo hola > hello >> hello >> hello
+ls
+cat hello"
+633;REDIRECTIONS;"echo hola > hello >> hello >> hello
+echo hola >> hello
+cat < hello"
+634;REDIRECTIONS;"echo hola > hello >> hello >> hello
+echo hola >> hello
+echo hola > hello >> hello >> hello
+cat < hello"
+635;REDIRECTIONS;"echo hola >> hello >> hello > hello
+echo hola >> hello
+cat < hello"
+636;REDIRECTIONS;"echo hola >> hello >> hello > hello
+echo hola >> hello
+echo hola >> hello >> hello > hello
+cat < hello"
+637;REDIRECTIONS;"echo hola > hello
+echo hola >> hello >> hello >> hello
+echo hola >> hello
+cat < hello"
+638;REDIRECTIONS;"echo hola > hello
+echo hey > bonjour
+echo <bonjour <hello"
+639;REDIRECTIONS;"echo hola > hello
+echo hey > bonjour
+echo <hello <bonjour"
+640;REDIRECTIONS;"echo hola > bonjour
+echo hey > hello
+rm bonjour hello
+echo hola > bonjour > hello > bonjour
+cat bonjour
+cat hello"
+641;REDIRECTIONS;"echo hola > bonjour
+echo hey > hello
+echo hola > bonjour > hello > bonjour
+cat bonjour
+cat hello"
+642;REDIRECTIONS;"echo hola > bonjour
+echo hey > hello
+rm bonjour hello
+echo hola > bonjour >> hello > bonjour
+cat bonjour
+cat hello"
+643;REDIRECTIONS;"echo hola > bonjour
+echo hey > hello
+echo hola > bonjour > hello > bonjour
+cat bonjour
+cat hello"
+644;REDIRECTIONS;"echo hola > bonjour
+echo hey > hello
+rm bonjour hello
+echo hola > bonjour > hello >> bonjour
+cat bonjour
+cat hello"
+645;REDIRECTIONS;"echo hola > bonjour
+echo hey > hello
+echo hola > bonjour > hello >> bonjour
+cat bonjour
+cat hello"
+646;REDIRECTIONS;"echo hola > bonjour
+echo hey > hello
+rm bonjour hello
+echo hola >> bonjour > hello > bonjour
+cat bonjour
+cat hello"
+647;REDIRECTIONS;"echo hola > bonjour
+echo hey > hello
+echo hola >> bonjour > hello > bonjour
+cat bonjour
+cat hello"
+648;REDIRECTIONS;"echo hola > bonjour
+echo hey > hello
+rm bonjour hello
+echo hola >> bonjour >> hello >> bonjour
+cat bonjour
+cat hello"
+649;REDIRECTIONS;"echo hola > bonjour
+echo hey > hello
+echo hola >> bonjour >> hello >> bonjour
+cat bonjour
+cat hello"
+650;REDIRECTIONS;"> bonjour echo hola bonjour
+cat bonjour"
+651;REDIRECTIONS;">bonjour echo > hola>bonjour>hola>>bonjour>hola hey >bonjour hola >hola
+cat bonjour
+cat hola"
+652;REDIRECTIONS;"echo bonjour > hola1
+echo hello > hola2
+echo 2 >hola1 >> hola2
+ls
+cat hola1
+cat hola2"
+653;REDIRECTIONS;"echo bonjour > hola1
+echo hello > hola2
+echo 2 >>hola1 > hola2
+ls
+cat hola1
+cat hola2"
+654;REDIRECTIONS;"> pwd
+ls"
+655;REDIRECTIONS;< pwd
+656;REDIRECTIONS;< Makefile .
+657;REDIRECTIONS;cat <pwd
+658;REDIRECTIONS;cat <srcs/pwd
+659;REDIRECTIONS;cat <../pwd
+660;REDIRECTIONS;cat >>
+661;REDIRECTIONS;cat >>>
+662;REDIRECTIONS;cat >> <<
+663;REDIRECTIONS;cat >> > >> << >>
+664;REDIRECTIONS;cat < ls
+665;REDIRECTIONS;cat < ls > ls
+666;REDIRECTIONS;"cat > ls1 < ls2
+ls"
+667;REDIRECTIONS;">>hola
+cat hola"
+668;REDIRECTIONS;"echo hola > bonjour
+cat < bonjour"
+669;REDIRECTIONS;"echo hola >bonjour
+cat <bonjour"
+670;REDIRECTIONS;"echo hola>bonjour
+cat<bonjour"
+671;REDIRECTIONS;"echo hola> bonjour
+cat< bonjour"
+672;REDIRECTIONS;"echo hola >bonjour
+cat< bonjour"
+673;REDIRECTIONS;"echo hola > bonjour
+cat < bonjour"
+674;REDIRECTIONS;"echo hola > srcs/bonjour
+cat < srcs/bonjour"
+675;REDIRECTIONS;"echo hola >srcs/bonjour
+cat <srcs/bonjour"
+676;REDIRECTIONS;"echo hola > bonjour
+echo que tal >> bonjour
+cat < bonjour"
+677;REDIRECTIONS;"echo hola > bonjour
+rm bonjour
+echo que tal >> bonjour
+cat < bonjour"
+678;REDIRECTIONS;"e'c'""h""o hola > bonjour
+cat 'bo'""n""jour"
+679;REDIRECTIONS;"echo hola > bonjour\ 1
+ls
+cat bonjour\ 1"
+680;REDIRECTIONS;"echo hola > bonjour hey
+ls
+cat bonjour
+cat hey"
+681;REDIRECTIONS;"echo hola > srcs/bonjour
+echo hey > srcs/hello
+>srcs/bonjour >srcs/hello <prout
+cat srcs/bonjour srcs/hello"
+682;REDIRECTIONS;"echo hola > srcs/bonjour
+echo hey > srcs/hello
+rm srcs/bonjour srcs/hello
+>srcs/bonjour >srcs/hello <prout
+ls srcs
+cat srcs/bonjour srcs/hello"
+683;REDIRECTIONS;"echo hola > srcs/bonjour
+echo hey > srcs/hello
+>srcs/bonjour <prout >srcs/hello 
+cat srcs/bonjour 
+cat srcs/hello"
+684;REDIRECTIONS;"echo hola > srcs/bonjour
+echo hey > srcs/hello
+rm srcs/bonjour srcs/hello
+>srcs/bonjour <prout >srcs/hello 
+ls srcs
+cat srcs/bonjour"
+685;REDIRECTIONS;"echo hola > ../bonjour
+echo hey > ../hello
+>../bonjour >../hello <prout
+cat ../bonjour ../hello"
+686;REDIRECTIONS;"echo hola > ../bonjour
+echo hey > ../hello
+rm ../bonjour ../hello
+>../bonjour >../hello <prout
+ls ..
+cat ../bonjour ../hello"
+687;REDIRECTIONS;"echo hola > ../bonjour
+echo hey > ../hello
+>../bonjour <prout >../hello 
+cat ../bonjour 
+cat ../hello"
+688;REDIRECTIONS;"echo hola > ../bonjour
+echo hey > ../hello
+rm ../bonjour ../hello
+>../bonjour <prout >../hello 
+ls ..
+cat ../bonjour"
+689;REDIRECTIONS;"echo hola > srcs/bonjour
+echo hey > srcs/hello
+>srcs/bonjour >>srcs/hello <prout
+cat srcs/bonjour 
+cat srcs/hello"
+690;REDIRECTIONS;"echo hola > srcs/bonjour
+echo hey > srcs/hello
+>>srcs/bonjour >srcs/hello <prout
+cat srcs/bonjour 
+cat srcs/hello"
+691;REDIRECTIONS;"echo hola > srcs/bonjour
+echo hey > srcs/hello
+>>srcs/bonjour >>srcs/hello <prout
+cat srcs/bonjour 
+cat srcs/hello"
+692;REDIRECTIONS;"echo hola > srcs/bonjour
+echo hey > srcs/hello
+>srcs/bonjour <prout >>srcs/hello
+cat srcs/bonjour 
+cat srcs/hello"
+693;REDIRECTIONS;"echo hola > srcs/bonjour
+echo hey > srcs/hello
+>>srcs/bonjour <prout >srcs/hello
+cat srcs/bonjour 
+cat srcs/hello"
+694;REDIRECTIONS;"echo hola > srcs/bonjour
+echo hey > srcs/hello
+>>srcs/bonjour <prout >>srcs/hello
+cat srcs/bonjour 
+cat srcs/hello"
+695;REDIRECTIONS;"echo hola > srcs/bonjour
+echo hey > srcs/hello
+<prout >>srcs/bonjour >>srcs/hello
+cat srcs/bonjour 
+cat srcs/hello"
+696;REDIRECTIONS;"echo hola > bonjour
+echo hey > hello
+<bonjour >hello
+cat bonjour 
+cat hello"
+697;REDIRECTIONS;"echo hola > bonjour
+echo hey > hello
+>bonjour >hello < prout
+cat bonjour 
+cat hello"
+698;REDIRECTIONS;"echo hola > bonjour
+echo hey > hello
+rm bonjour hello
+>bonjour >hello < prout
+cat bonjour 
+cat hello"
+699;REDIRECTIONS;"echo hola > bonjour
+echo hey > hello
+>bonjour <prout hello
+cat bonjour 
+cat hello"
+700;REDIRECTIONS;"echo hola > bonjour
+echo hey > hello
+rm bonjour hello
+>bonjour <prout hello
+cat bonjour"
+701;REDIRECTIONS;"echo hola > bonjour
+<bonjour cat | wc > bonjour
+cat bonjour"
+702;REDIRECTIONS;"rm -f bonjour
+rm bonjour > bonjour
+ls -l bonjour"
+703;REDIRECTIONS;"export HOLA=""bonjour hello""
+>$HOLA
+ls"
+704;REDIRECTIONS;"export HOLA=""bonjour hello""
+>""$HOLA""
+ls"
+705;REDIRECTIONS;"export HOLA=""bonjour hello""
+>$""HOLA""
+ls"
+706;REDIRECTIONS;"export HOLA=""bonjour hello""
+>$HOLA>hey
+ls"
+707;REDIRECTIONS;"export HOLA=""bonjour hello""
+>hey>$HOLA
+ls"
+708;REDIRECTIONS;"export HOLA=""bonjour hello""
+>hey>$HOLA>hey>hey
+ls"
+709;REDIRECTIONS;"export A=hey
+export A B=Hola D E C=""Que Tal""
+echo $PROUT$B$C > /tmp/a > /tmp/b > /tmp/c
+cat /tmp/a
+cat /tmp/b
+cat /tmp/c"
+710;REDIRECTIONS;<a cat <b <c
+711;REDIRECTIONS;"<a cat <b <c
+cat a
+cat b
+cat c"
+712;REDIRECTIONS;">a ls >b >>c >d
+cat a
+cat b
+cat c
+cat d"
+713;REDIRECTIONS;">a ls >b >>c >d
+cat a
+cat b
+cat c
+cat d"
+714;REDIRECTIONS;"echo hola > a > b > c
+cat a
+cat b
+cat c"
+715;REDIRECTIONS;"mkdir dir
+ls -la > dir/bonjour
+cat dir/bonjour"
+716;REDIRECTIONS;"<a
+cat a"
+717;REDIRECTIONS;">d cat <a >>e
+cat a
+cat d
+cat e"
+718;REDIRECTIONS;"< a > b cat > hey >> d
+cat d
+ls"
+719;HEREDOC ⏮️;cat << hola
+720;HEREDOC ⏮️;cat << 'hola'
+721;HEREDOC ⏮️;"cat << ""hola"""
+722;HEREDOC ⏮️;"cat << ho""la"""
+723;HEREDOC ⏮️;cat << $HOME
+724;HEREDOC ⏮️;"cat << hola > bonjour
+cat bonjour"
+725;HEREDOC ⏮️;cat << hola | rev
+726;HEREDOC ⏮️;<< hola
+727;HEREDOC ⏮️;<<hola
+728;HEREDOC ⏮️;cat <<
+729;HEREDOC ⏮️;cat << prout << lol << koala
+730;HEREDOC ⏮️;prout << lol << cat << koala
+731;HEREDOC ⏮️;<< $hola
+732;HEREDOC ⏮️;"<< $""hola""$""b"""
+733;HEREDOC ⏮️;"<< $""$hola""$$""b"""
+734;HEREDOC ⏮️;"<< ho$la$""$a""$$""b"""
+735;HEREDOC ⏮️;echo hola <<< bonjour
+736;HEREDOC ⏮️;echo hola <<<< bonjour
+737;HEREDOC ⏮️;echo hola <<<<< bonjour
+738;WILDCARD ⭐;ls *
+739;WILDCARD ⭐;ls *.*
+740;WILDCARD ⭐;ls *.hola
+741;WILDCARD ⭐;cat M*le
+742;WILDCARD ⭐;cat M*ee
+743;WILDCARD ⭐;cat Make*file
