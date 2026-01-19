@@ -4,7 +4,7 @@ import pytest
 import os
 
 # from minishell_tester import MINISHELL, TEST_CSV, TEST_TIMEOUT, GENERATED_DIR
-from .core import TestCaseLoader
+from .core import CaseLoader
 
 # Resolve package and project locations robustly
 def find_project_root():

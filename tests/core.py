@@ -112,7 +112,7 @@ class Minishell(Shell):
 # --- Utilities ---
 
 
-class TestCaseLoader:
+class CaseLoader:
     """Handles loading and parsing of test definitions from CSV."""
 
     def __init__(self, csv_path: Path):

@@ -1,7 +1,7 @@
 import pytest
 from pathlib import Path
 
-from .core import Bash, Minishell, TestCaseLoader, Command, DiffGenerator, ShellResult
+from .core import Bash, Minishell, CaseLoader, Command, DiffGenerator, ShellResult
 
 
 # Constants
@@ -25,21 +25,23 @@ def minishell_binary(tmp_path_factory):
 def pytest_generate_tests(metafunc):
     if "cmd" in metafunc.fixturenames:
         import os
-        from .core import TestCaseLoader
+        from .core import CaseLoader
         from pathlib import Path
         # Replicate the logic from conftest.py
         def find_project_root():
             current = Path(__file__).resolve().parent
             while current.parent != current:
-                if os.path.exists(os.path.join(str(current), 'minishell')):
+                minishell_path = os.path.join(str(current), 'minishell')
+                makefile_path = os.path.join(str(current), 'Makefile')
+                if os.path.exists(minishell_path) and os.path.exists(makefile_path):
                     return str(current)
                 current = current.parent
-            raise ValueError("Could not find project root with minishell binary")
+            raise ValueError("Could not find project root with minishell binary and Makefile")
         PROJECT_ROOT = find_project_root()
         PACKAGE_DIR = os.path.join(PROJECT_ROOT, 'minishell_tester')
         TEST_CSV = os.path.join(PACKAGE_DIR, 'cases', 'minishell_tests.csv')
         kind_filter = os.environ.get('TEST_KIND', None)
-        loader = TestCaseLoader(Path(TEST_CSV))
+        loader = CaseLoader(Path(TEST_CSV))
         tests = loader.load()
         if kind_filter:
             tests = [t for t in tests if t.kind == kind_filter]
