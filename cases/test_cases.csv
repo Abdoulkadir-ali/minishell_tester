@@ -1,21 +1,101 @@
 id;kind;test
-1;generated;ls /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated || echo ok
-2;generated;"grep -n ""qkc"" /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/sample_2.txt || true ; wc -l /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/sample_2.txt ; grep -n ""Uu"" /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/sample_1.txt || true 2> /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/err_85.log"
-3;generated;false
-4;generated;"grep -n ""tV"" /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/sample_2.txt || true"
-5;generated;true | echo ok | true
-6;generated;ls /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated
-7;generated;"grep -n ""g3y"" /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/sample_0.txt || true && true | true 2> /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/err_5.log || sed -n 1,2p /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/sample_0.txt"
-8;generated;"printf ""-AUKt""\n"
-9;generated;"echo ""C-gCsbVP4X"""
-10;generated;false
-11;generated;wc -l /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/sample_1.txt > /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/out_61.txt
-12;generated;"(printf ""KlcE""\n)"
-13;generated;"echo ok 2> /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/err_84.log && printf ""CwqU1yvAt""\n"
-14;generated;"echo ok ; printf ""AoNfD2EXg""\n"
-15;generated;"cat /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/sample_1.txt > /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/out_89.txt | wc -l /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/sample_2.txt 2> /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/err_51.log ; echo ""DyP_l"""
-16;generated;"echo ""yVw"" | false | echo ok"
-17;generated;"false | echo ok 2> /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/err_61.log || true 2>> /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/err_87.log && printf ""W""\n"
-18;generated;"true >> /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/out_54.txt | grep -n ""QKeK"" /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/sample_1.txt || true || echo ok"
-19;generated;"cat /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/sample_1.txt > /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/out_87.txt ; sed -n 1,2p /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/sample_0.txt"
-20;generated;"ls /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated 2> /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/err_15.log ; false && ls /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated ; cat /home/abdoali/42cursus/cercle-4/minishell/minishell_tester/tools/generated/sample_1.txt"
+1;generated;true | true || cat generated/sample_0.txt | ls /nonexistent_path
+2;generated;echo ok > generated/out_31.txt
+3;generated;echo ok
+4;generated;"echo ""9cbq7"" && printf ""fDpg""\n"
+5;generated;"grep -n ""WUF"" generated/sample_1.txt || true | ls /nonexistent_path > generated/out_96.txt"
+6;generated;ls generated
+7;generated;cat generated/sample_2.txt >> generated/out_5.txt
+8;generated;"echo ok || cat generated/sample_1.txt ; false | cat generated/sample_0.txt"
+9;generated;"grep -n ""o"" generated/sample_1.txt || true && false"
+10;generated;"echo ""1axjSdoslwJ"" 2>> generated/err_6.log"
+11;generated;echo ok > generated/out_5.txt
+12;generated;wc -l generated/sample_0.txt
+13;generated;sed -n 1,2p generated/sample_1.txt | ls generated || echo ok | true
+14;generated;"printf ""xa7NjNy1ig""\n"
+15;generated;"wc -l generated/sample_1.txt && echo ok && true || grep -n ""D9 k"" generated/sample_2.txt || true"
+16;generated;false
+17;generated;"wc -l generated/sample_2.txt | echo ""h6WnTK"" || false 2>> generated/err_34.log || ls /nonexistent_path"
+18;generated;"sed -n 1,2p generated/sample_1.txt | echo ""cyG LL"""
+19;generated;"echo ""_VLQ4-_eCoow2V"" && printf ""96CLMd""\n 2>> generated/err_19.log || echo ""DrTj1-1lvV Qxl"""
+20;generated;"echo ""4uSrO0"" || echo ""lL8z"" 2> generated/err_71.log"
+21;generated;"echo ""CVwLVVYWqoe9YL"" > generated/out_67.txt ; grep -n ""drN"" generated/sample_0.txt || true 2> generated/err_16.log"
+22;generated;"false || grep -n ""P"" generated/sample_1.txt || true || false"
+23;generated;echo ok || true 2>> generated/err_13.log
+24;generated;sed -n 1,2p generated/sample_2.txt
+25;generated;(ls /nonexistent_path && false)
+26;generated;"printf ""Bb5P1J""\n && cat generated/sample_2.txt"
+27;generated;"echo ok | echo ""Sf_oFHwQ"" >> generated/out_28.txt && printf ""pd Pjh1xb""\n 2>> generated/err_40.log ; printf ""b2v""\n"
+28;generated;true || false
+29;generated;"false && printf ""ARIk6G""\n"
+30;generated;"echo ok | cat generated/sample_0.txt > generated/out_30.txt | printf ""INwhB32jk""\n || cat generated/sample_2.txt"
+31;generated;"grep -n ""9"" generated/sample_0.txt || true && cat generated/sample_1.txt | cat generated/sample_1.txt ; cat generated/sample_0.txt"
+32;generated;"sed -n 1,2p generated/sample_0.txt ; wc -l generated/sample_0.txt >> generated/out_80.txt | false"
+33;generated;"true ; echo ok 2> generated/err_60.log"
+34;generated;"cat generated/sample_0.txt | true | echo ""P _NooxBFrqTQR"" || echo ok"
+35;generated;true
+36;generated;false | false
+37;generated;cat generated/sample_0.txt
+38;generated;"echo ok || grep -n ""AEs"" generated/sample_0.txt || true || true || true >> generated/out_16.txt"
+39;generated;"false && cat generated/sample_2.txt 2> generated/err_38.log | echo ""WtF5C"" ; sed -n 1,2p generated/sample_2.txt"
+40;generated;"false && printf ""dv65n9""\n"
+41;generated;ls /nonexistent_path && echo ok | false
+42;generated;"printf ""WFV6M_fT""\n && false && true"
+43;generated;"false | true | grep -n ""Yl"" generated/sample_1.txt || true >> generated/out_2.txt"
+44;generated;"grep -n ""1"" generated/sample_1.txt || true"
+45;generated;"ls generated || grep -n ""L"" generated/sample_1.txt || true ; wc -l generated/sample_2.txt"
+46;generated;wc -l generated/sample_1.txt
+47;generated;sed -n 1,2p generated/sample_1.txt || echo ok && sed -n 1,2p generated/sample_2.txt 2> generated/err_39.log
+48;generated;true || cat generated/sample_1.txt >> generated/out_43.txt | false 2> generated/err_23.log
+49;generated;"printf ""R5""\n && ls generated && grep -n ""0Z"" generated/sample_0.txt || true | sed -n 1,2p generated/sample_1.txt 2>> generated/err_13.log"
+50;generated;true 2> generated/err_71.log
+51;generated;true 2> generated/err_91.log && cat generated/sample_0.txt || true || true
+52;generated;echo ok | cat generated/sample_1.txt
+53;generated;echo ok
+54;generated;"wc -l generated/sample_2.txt || echo ok | ls generated ; echo ok"
+55;generated;"grep -n ""WLj"" generated/sample_0.txt || true >> generated/out_31.txt"
+56;generated;"grep -n ""tL"" generated/sample_2.txt || true > generated/out_52.txt"
+57;generated;"printf ""mnOom""\n 2> generated/err_0.log && echo ok 2>> generated/err_87.log || echo ok"
+58;generated;"grep -n ""hCMV"" generated/sample_2.txt || true ; sed -n 1,2p generated/sample_2.txt | cat generated/sample_1.txt"
+59;generated;true 2>> generated/err_23.log | ls /nonexistent_path | true
+60;generated;wc -l generated/sample_1.txt > generated/out_71.txt
+61;generated;"grep -n ""9"" generated/sample_1.txt || true | printf ""qVRKZxrnH""\n >> generated/out_39.txt | printf ""B""\n"
+62;generated;"true ; echo ok ; false"
+63;generated;"grep -n ""NWua"" generated/sample_0.txt || true"
+64;generated;"false | echo ""y6O"" | echo ok"
+65;generated;"cat generated/sample_0.txt ; cat generated/sample_1.txt || false && grep -n ""B0V"" generated/sample_0.txt || true"
+66;generated;"ls generated | printf ""rPu5odO""\n > generated/out_0.txt | true"
+67;generated;"echo ok >> generated/out_38.txt ; wc -l generated/sample_1.txt ; cat generated/sample_0.txt"
+68;generated;"wc -l generated/sample_0.txt | echo ok | true && echo ""iuFOJCNmLif5h-XAB"""
+69;generated;"ls /nonexistent_path | sed -n 1,2p generated/sample_0.txt > generated/out_10.txt || echo ""r"" ; false"
+70;generated;"ls generated && echo ""92pcW0SKqqkND"" >> generated/out_96.txt && ls generated"
+71;generated;sed -n 1,2p generated/sample_0.txt > generated/out_25.txt | sed -n 1,2p generated/sample_2.txt && echo ok
+72;generated;ls generated >> generated/out_54.txt && echo ok
+73;generated;true 2> generated/err_9.log | echo ok 2> generated/err_16.log
+74;generated;"echo ""wEd"" 2> generated/err_69.log || true ; echo ok | grep -n ""hd"" generated/sample_1.txt || true"
+75;generated;"grep -n ""2OGz"" generated/sample_0.txt || true"
+76;generated;"echo ""EIBFDOj"" > generated/out_95.txt ; echo ok | printf ""rNYc""\n || grep -n ""C"" generated/sample_1.txt || true"
+77;generated;"printf ""N""\n 2>> generated/err_18.log && echo ""6A R6DCA1"""
+78;generated;"wc -l generated/sample_2.txt || wc -l generated/sample_0.txt ; echo ok 2>> generated/err_26.log | sed -n 1,2p generated/sample_2.txt"
+79;generated;"echo ""nJwfmU yhBK5Nkl1Q"""
+80;generated;"true && wc -l generated/sample_1.txt ; printf ""sNP""\n"
+81;generated;echo ok | true
+82;generated;"false && wc -l generated/sample_2.txt >> generated/out_38.txt || printf ""aiuTys""\n ; grep -n ""tb"" generated/sample_1.txt || true"
+83;generated;"false | cat generated/sample_2.txt ; true && false >> generated/out_10.txt"
+84;generated;"wc -l generated/sample_2.txt | grep -n ""ox_"" generated/sample_0.txt || true || wc -l generated/sample_2.txt ; printf ""1dKUC uB""\n"
+85;generated;"echo ok ; printf ""MVfD76yHb""\n > generated/out_70.txt"
+86;generated;echo ok || sed -n 1,2p generated/sample_1.txt > generated/out_11.txt | ls generated
+87;generated;cat generated/sample_0.txt 2> generated/err_82.log | ls generated
+88;generated;"grep -n ""6WBk"" generated/sample_2.txt || true ; grep -n ""Iz"" generated/sample_1.txt || true"
+89;generated;ls /nonexistent_path 2> generated/err_5.log
+90;generated;"grep -n ""LKmv"" generated/sample_2.txt || true ; grep -n ""z8"" generated/sample_2.txt || true 2> generated/err_82.log | cat generated/sample_0.txt"
+91;generated;true 2> generated/err_5.log
+92;generated;"echo ok ; grep -n ""sP"" generated/sample_0.txt || true"
+93;generated;"printf ""g9e8l9m""\n > generated/out_86.txt"
+94;generated;"true ; ls generated"
+95;generated;"wc -l generated/sample_0.txt | echo ""1"" > generated/out_38.txt && true > generated/out_71.txt"
+96;generated;"(echo ok 2> generated/err_47.log | echo ""OU11TT8J7qpmUkEaoz"")"
+97;generated;echo ok 2>> generated/err_29.log && wc -l generated/sample_2.txt
+98;generated;cat generated/sample_1.txt && sed -n 1,2p generated/sample_0.txt | false | ls generated > generated/out_39.txt
+99;generated;"printf ""1""\n 2>> generated/err_67.log"
+100;generated;"ls /nonexistent_path 2>> generated/err_80.log | echo ""db6Dd1isZetqocMA9"""

@@ -7,13 +7,6 @@ from .core import Bash, Minishell, TestCaseLoader, Command, DiffGenerator, Shell
 # Constants
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 MINISHELL_PATH = PROJECT_ROOT / "minishell"
-CSV_PATH = PROJECT_ROOT / 'minishell_tester' / 'cases' / 'test_cases.csv'
-
-
-@pytest.fixture(scope="session")
-def loaded_test_cases():
-    loader = TestCaseLoader(CSV_PATH)
-    return loader.load()
 
 
 @pytest.fixture(scope="session")
@@ -27,6 +20,30 @@ def minishell_binary(tmp_path_factory):
     shell = Minishell(MINISHELL_PATH)
     shell.prepare_binary(bin_dir)
     return shell
+
+
+def pytest_generate_tests(metafunc):
+    if "cmd" in metafunc.fixturenames:
+        import os
+        from .core import TestCaseLoader
+        from pathlib import Path
+        # Replicate the logic from conftest.py
+        def find_project_root():
+            current = Path(__file__).resolve().parent
+            while current.parent != current:
+                if os.path.exists(os.path.join(str(current), 'minishell')):
+                    return str(current)
+                current = current.parent
+            raise ValueError("Could not find project root with minishell binary")
+        PROJECT_ROOT = find_project_root()
+        PACKAGE_DIR = os.path.join(PROJECT_ROOT, 'minishell_tester')
+        TEST_CSV = os.path.join(PACKAGE_DIR, 'cases', 'minishell_tests.csv')
+        kind_filter = os.environ.get('TEST_KIND', None)
+        loader = TestCaseLoader(Path(TEST_CSV))
+        tests = loader.load()
+        if kind_filter:
+            tests = [t for t in tests if t.kind == kind_filter]
+        metafunc.parametrize("cmd", tests)
 
 
 class TestMinishellSuite:
@@ -46,6 +63,11 @@ class TestMinishellSuite:
         if bash_res.stderr or mini_res.stderr:
             report.append(f"Bash Stderr: {bash_res.stderr.strip()}")
             report.append(f"Mini Stderr: {mini_res.stderr.strip()}")
+        # Log to file
+        import os
+        log_path = os.path.join(os.path.dirname(__file__), '..', 'logs', 'test.log')
+        with open(log_path, 'a') as f:
+            f.write("\n".join(report) + "\n")
         pytest.fail("\n".join(report), pytrace=False)
 
     def run_comparison(self, cmd: Command, bash: Bash, minishell: Minishell, work_dir: Path):
@@ -54,6 +76,5 @@ class TestMinishellSuite:
         if bash_res != mini_res:
             self.fail_with_report(cmd, bash_res, mini_res)
 
-    @pytest.mark.parametrize("cmd", TestCaseLoader(CSV_PATH).load())
     def test_command_execution(self, cmd: Command, bash_shell: Bash, minishell_binary: Minishell, tmp_path: Path):
         self.run_comparison(cmd, bash_shell, minishell_binary, tmp_path)

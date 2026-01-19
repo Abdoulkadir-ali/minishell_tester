@@ -34,7 +34,7 @@
 
 - **Python 3.8+**
 - **pytest** (`pip install pytest`)
-- **Minishell Binary**: Built and executable in the project root.
+- **Minishell Binary**: Built and executable in the project root (`make`).
 
 ---
 
@@ -58,30 +58,42 @@
 
 ## 📖 **Usage**
 
-### Run All Tests
+### Run All Tests (Default: Generated + Manual)
 ```bash
 python3 minishell_tester/main.py
 ```
+- Runs all tests from `cases/minishell_tests.csv` (both "generated" and "manual" kinds, 1000+ tests).
 
-### Run Specific Tests
+### Run Specific Kinds
 ```bash
-python3 minishell_tester/main.py -k "test_name"
+TEST_KIND=manual python3 minishell_tester/main.py    # Only manual tests
+TEST_KIND=generated python3 minishell_tester/main.py # Only generated tests
 ```
 
-### Collect Tests Only
+### Other Options
 ```bash
-python3 minishell_tester/main.py --collect-only
+python3 minishell_tester/main.py -v              # Verbose output
+python3 minishell_tester/main.py -x              # Stop on first failure
+python3 minishell_tester/main.py --tb=short      # Shorter tracebacks
+python3 minishell_tester/main.py --collect-only  # Collect without running
+python3 minishell_tester/main.py -k "cmd7"       # Run specific test by ID
 ```
+- Failed tests are logged to `logs/test.log` with detailed diffs.
 
-### Verbose Output
+### Generate Custom Tests
+Use the built-in generator for random test cases:
 ```bash
-python3 minishell_tester/main.py -v
+cd minishell_tester
+python3 tools/test_generator.py --count 500 --out ../cases/test_cases.csv --seed 42
 ```
+- `--count`: Number of tests to generate.
+- `--out`: Output CSV path.
+- `--seed`: For reproducible generation.
+- Overwrites `test_cases.csv` with generated tests (kind="generated").
 
-### Options
-- `-x`: Stop on first failure.
-- `--tb=short`: Shorter tracebacks.
-- Full pytest options: `python3 minishell_tester/main.py --help`
+### Using Large Test Sets
+- The tester now uses `cases/minishell_tests.csv` by default, containing 1000+ tests (manual + generated).
+- For smaller sets, you can generate custom tests or switch back to `test_cases.csv` by editing `conftest.py`.
 
 ---
 
@@ -93,17 +105,21 @@ python3 minishell_tester/main.py -v
   - **`core.py`**: Shell execution and diff utilities.
   - **`conftest.py`**: Fixtures and config.
 - **`cases/`**: Test case CSVs.
-- **`logs/`**: Log storage.
+- **`logs/`**: Log storage (failed test reports).
 - **`tools/`**: Test generation scripts.
 
 ---
 
 ## 🔧 **How It Works**
 
-1. **Path Discovery**: Searches upwards for the `minishell` binary.
-2. **Binary Prep**: Copies and chmods the binary safely.
-3. **Execution**: Runs commands in Minishell and Bash, compares results.
+1. **Path Discovery**: Searches for `minishell` binary dynamically.
+2. **Test Loading**: Parses CSV (format: `id;kind;test`), filters by `TEST_KIND` if set.
+3. **Execution**: Runs each command in Minishell and Bash, compares results.
 4. **Reporting**: Outputs diffs on failures.
+
+CSV Kinds:
+- **generated**: Auto-generated random commands.
+- **manual**: Hand-written test cases.
 
 ---
 
