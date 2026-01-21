@@ -141,7 +141,9 @@ class CaseLoader:
                 if len(row) >= 3:
                     id_str = str(row[0]).strip()
                     kind = str(row[1]).strip() or 'Uncategorized'
-                    test_text = str(row[2]).strip()
+                    # Normalize CRLF and strip surrounding whitespace so commands
+                    # don't contain stray "\r" characters which break shells
+                    test_text = str(row[2]).replace('\r', '').strip()
                 elif len(row) == 2:
                     id_str = str(row[0]).strip()
                     kind = 'generated'
