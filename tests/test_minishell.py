@@ -1,6 +1,6 @@
 import pytest
 from pathlib import Path
-
+import os
 from .core import Bash, Minishell, CaseLoader, Command, DiffGenerator, ShellResult
 
 
@@ -24,9 +24,6 @@ def minishell_binary(tmp_path_factory):
 
 def pytest_generate_tests(metafunc):
     if "cmd" in metafunc.fixturenames:
-        import os
-        from .core import CaseLoader
-        from pathlib import Path
         # Replicate the logic from conftest.py
         def find_project_root():
             current = Path(__file__).resolve().parent
@@ -38,7 +35,10 @@ def pytest_generate_tests(metafunc):
                 current = current.parent
             raise ValueError("Could not find project root with minishell binary and Makefile")
         PROJECT_ROOT = find_project_root()
-        PACKAGE_DIR = os.path.join(PROJECT_ROOT, 'minishell_tester')
+        # Derive the package directory relative to this test file so the
+        # tests work whether the package folder is named
+        # 'minishell-tester' or 'minishell_tester'.
+        PACKAGE_DIR = str(Path(__file__).resolve().parent.parent)
         TEST_CSV = os.path.join(PACKAGE_DIR, 'cases', 'minishell_tests.csv')
         kind_filter = os.environ.get('TEST_KIND', None)
         loader = CaseLoader(Path(TEST_CSV))

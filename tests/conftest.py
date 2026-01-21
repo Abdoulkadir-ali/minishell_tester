@@ -17,7 +17,9 @@ def find_project_root():
     raise ValueError("Could not find project root with minishell binary")
 
 PROJECT_ROOT = find_project_root()
-PACKAGE_DIR = os.path.join(PROJECT_ROOT, 'minishell_tester')
+# Derive package directory robustly from this file's location (supports
+# both 'minishell-tester' and 'minishell_tester' naming).
+PACKAGE_DIR = str(Path(__file__).resolve().parent.parent)
 
 # Paths are expressed as strings for simpler use from tests/scripts
 MINISHELL = os.path.join(PROJECT_ROOT, 'minishell')
@@ -70,7 +72,8 @@ def minishell_exec_path(tmp_path_factory):
 def csv_commands():
     import os
     kind_filter = os.environ.get('TEST_KIND', None)  # e.g., export TEST_KIND=manual
-    loader = TestCaseLoader(Path(TEST_CSV))
+    # Use the CaseLoader implemented in tests/core.py
+    loader = CaseLoader(Path(TEST_CSV))
     tests = loader.load()
     if kind_filter:
         tests = [t for t in tests if t.kind == kind_filter]
